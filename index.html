@@ -15,7 +15,7 @@
 
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #0f0f0f;
+      background: linear-gradient(135deg, #0f0f0f, #111122);
       color: #eee;
     }
 
@@ -68,13 +68,14 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      background: linear-gradient(135deg, #0f0f0f, #111122);
     }
+    
 
     #hero h1 {
       font-size: 3.5rem;
       background: linear-gradient(90deg, #00f0ff, #ff00f7);
       -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
       margin-bottom: 20px;
     }
@@ -86,18 +87,21 @@
     }
 
     .btn {
-      padding: 12px 25px;
-      border: 2px solid #00f0ff;
-      color: #00f0ff;
-      background: transparent;
-      border-radius: 30px;
       font-weight: bold;
       text-decoration: none;
-      transition: all 0.3s;
+      padding: 12px 25px;
+      border-radius: 30px;
+      color: #00f0ff;
+      background-color: #0f0f0f;
+      border: 2px solid;
+      border-image-slice: 1;
+      border-width: 2px;
+      border-image-source: linear-gradient(90deg, #00f0ff, #ff00f7);
+      transition: all 0.3s ease;
     }
 
     .btn:hover {
-      background: #00f0ff;
+      background: linear-gradient(90deg, #00f0ff, #ff00f7);
       color: #000;
     }
 
@@ -112,7 +116,6 @@
       line-height: 1.6;
     }
 
-    /* Timeline */
     .timeline {
       position: relative;
       margin-top: 50px;
@@ -178,20 +181,44 @@
       color: white;
     }
 
-    .tag.sql { background: #d83b01; }
-    .tag.powerbi { background: #f2c811; color: #000; }
-    .tag.powerapps { background: #742774; }
-    .tag.flutter { background: #02569B; }
-    .tag.python { background: #3572A5; }
-    .tag.firebase { background: #FFCA28; color: #000; }
-
-    .timeline-content ul {
-      margin-top: 10px;
-      padding-left: 20px;
-      color: #ccc;
+    .tag {
+      background: #1a1a1a;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 1rem;
+      margin: 5px;
+      color: white;
+      display: inline-block;
     }
+    
+    /* Tech-specific colors */
+    .tag.sql           { background: #d83b01; }
+    .tag.powerbi       { background: #f2c811; color: #000; }
+    .tag.powerapps     { background: #742774; }
+    .tag.flutter       { background: #02569B; }
+    .tag.python        { background: #9ea535; }
+    .tag.firebase      { background: #FFCA28; color: #000; }
+    .tag.react-native  { background: #fb61c0; color: #000; }
+    .tag.dart          { background: #00ff08; color: #000; }
+    .tag.angular       { background: #DD0031; }
+    .tag.dotnet        { background: #512BD4; }
+    .tag.c             { background: #9B599A; }
+    .tag.html          { background: #e44d26; }
+    .tag.cplusplus     { background: #f34b7d; } /* optional C++ color */
+    .tag.mongodb       { background: #47A248; color: #fff; } /* optional MongoDB color */
+    .tag.docker        { background: #2496ED; color: #fff; } /* optional Docker color */
+    .tag.java          { background: #007396; } /* optional Java color */
+    .tag.javascript    { background: #F7DF1E; color: #000; } /* optional JavaScript color */
+    .tag.typescript    { background: #007ACC; color: #fff; } /* optional TypeScript color */
+    .tag.css           { background: #264de4; } /* optional CSS color */
+    .tag.bootstrap     { background: #563d7c; } /* optional Bootstrap color */ 
+    .tag.rust          { background: #dea584; } /* optional Rust color */  
+    .tag.nodejs       { background: #8CC84B; } /* optional Node.js color */
+    .tag.git           { background: #F05032; } /* optional Git color */
+    .tag.github        { background: #181717; } /* optional GitHub color */
+    .tag.aws           { background: #FF9900; } /* optional AWS color */
 
-    /* Skills & Projects */
+
     .skills-list, .projects-container {
       display: flex;
       flex-wrap: wrap;
@@ -236,20 +263,6 @@
     .project-card p {
       font-size: 0.95rem;
       color: #ccc;
-    }
-
-    .tags {
-      margin: 10px 0;
-    }
-
-    .tag {
-      display: inline-block;
-      background: #333;
-      color: #fff;
-      padding: 5px 10px;
-      font-size: 0.75rem;
-      border-radius: 12px;
-      margin: 3px 5px 0 0;
     }
 
     .project-links {
@@ -306,7 +319,14 @@
         flex-direction: column;
         gap: 15px;
       }
-    }
+    } 
+    .projects-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      justify-items: center;
+      margin-top: 40px;
+    }       
   </style>
 </head>
 <body>
@@ -315,7 +335,7 @@
     <div class="logo">SuryaTeja</div>
     <ul class="nav-links">
       <li><a href="#hero">Home</a></li>
-      <li><a href="SuryaTeja_Resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+      <li><a href="resume.html">Resume</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </header>
@@ -328,12 +348,19 @@
 
   <section id="about" data-aos="fade-up">
     <h2>About Me</h2>
-    <p>I’m a software engineering student passionate about building scalable apps, data systems, and impactful tech products. I love combining creativity with code to bring ideas to life.</p>
+    <p>
+      I'm a final-year Software Engineering student at Ontario Tech University, passionate about designing and developing scalable, real-world software solutions. From predictive weather models to civic engagement platforms and secure file systems, I’ve built full-stack applications that solve real problems and showcase my versatility across both frontend and backend technologies.
+    </p>
+    <p>
+      My experience spans data analysis, mobile app development, and cloud-based infrastructure — using tools like Python, Dart, Firebase, AWS, Google Cloud, SQL, Power BI, and more. I've had the opportunity to intern with Ontario Power Generation, apprentice as a university app developer, and serve in federal elections while maintaining strong academic performance (Dean’s and President’s Honour Lists).
+    </p>
+    <p>
+      I believe in combining creativity with code, and I’m always seeking projects where I can push boundaries, learn something new, and build tech that matters. Whether it's crafting secure apps, developing data pipelines, or launching desktop tools — I’m all about bringing bold ideas to life through clean, effective code.
+    </p>
   </section>
-
+  
   <section id="experience" data-aos="fade-up">
     <h2>Experience</h2>
-
     <div class="timeline">
       <div class="timeline-item">
         <div class="timeline-icon">💼</div>
@@ -388,88 +415,131 @@
   <section id="skills" data-aos="fade-up">
     <h2>Skills</h2>
     <ul class="skills-list">
-      <li>Python</li><li>Java</li><li>C++</li><li>Flutter</li><li>Dart</li><li>React</li>
-      <li>Firebase</li><li>MongoDB</li><li>Power BI</li><li>Docker</li><li>SQL</li>
+      <li class="tag python">Python</li>
+      <li class="tag java">Java</li>
+      <li class="tag c">C</li>
+      <li class="tag cplusplus">C++</li>
+      <li class="tag flutter">Flutter</li>
+      <li class="tag dart">Dart</li>
+      <li class="tag firebase">Firebase</li>
+      <li class="tag mongodb">MongoDB</li>
+      <li class="tag powerbi">Power BI</li>
+      <li class="tag docker">Docker</li>
+      <li class="tag sql">SQL</li>
+      <li class="tag angular">Angular</li>
+      <li class="tag dotnet">.NET Framework</li>
+      <li class="tag powerapps">Power Apps</li>
+      <li class="tag react-native">React Native</li>
+      <li class="tag html">HTML</li>
+      <li class="tag javascript">JavaScript</li>
+      <li class="tag typescript">TypeScript</li>
+      <li class="tag css">CSS</li>
+      <li class="tag bootstrap">Bootstrap</li>
+      <li class="tag rust">Rust</li>
+      <li class="tag nodejs">Node.js</li>
+      <li class="tag git">Git</li>
+      <li class="tag github">GitHub</li>
     </ul>
   </section>
+  
 
   <section id="projects" data-aos="fade-up">
     <h2>Projects</h2>
     <div class="projects-container">
-
+  
+      <!-- Project 1 -->
       <div class="project-card">
-        <img src="https://via.placeholder.com/300x200" alt="Food App" />
+        <img src="images/food_app.png" alt="Food App" />
         <h3>Food Planning App</h3>
         <p>Flutter app for meal tracking, budgeting, and real-time sync with Firebase.</p>
         <div class="tags">
-          <span class="tag">Flutter</span>
-          <span class="tag">Firebase</span>
+          <span class="tag dart">Dart</span>
+          <span class="tag flutter">Flutter</span>
+          <span class="tag firebase">Firebase</span>
         </div>
         <div class="project-links">
-          <a href="#">Code</a>
-          <a href="#">Demo</a>
+          <a href="https://github.com/Sharrabbha1/FoodApp_Assignment3" target="_blank" rel="noopener">Code</a>
         </div>
       </div>
 
-      <div class="project-card">
-        <img src="https://via.placeholder.com/300x200" alt="Municipal App" />
-        <h3>By-Laws Municipal App</h3>
-        <p>React Native platform for reporting civic violations with Firebase backend.</p>
-        <div class="tags">
-          <span class="tag">React Native</span>
-          <span class="tag">Firebase</span>
-        </div>
-        <div class="project-links">
-          <a href="#">Code</a>
-          <a href="#">Demo</a>
-        </div>
-      </div>
+      <!-- Project 2 -->
+<div class="project-card">
+  <img src="images/municipalities.png" alt="Municipal App" />
+  <h3>By-Laws Municipal App</h3>
+  <p>React Native platform for reporting civic violations with Firebase backend.</p>
+  <div class="tags">
+    <span class="tag react-native">React Native</span>
+    <span class="tag firebase">Firebase</span>
+    <span class="tag javascript">javascript</span>
+  </div>        
+  <div class="project-links">
+    <a href="https://github.com/Sharrabbha1/ByLaws_App" target="_blank" rel="noopener">Code</a>
+  </div>
+</div>
 
-      <div class="project-card">
-        <img src="https://via.placeholder.com/300x200" alt="Weather App" />
-        <h3>Weather Simulation</h3>
-        <p>Used ARIMA + Monte Carlo for forecasts. Deployed with React and Python backend.</p>
-        <div class="tags">
-          <span class="tag">Python</span>
-          <span class="tag">React</span>
-          <span class="tag">ARIMA</span>
-          <span class="tag">Monte Carlo</span>
-        </div>
-        <div class="project-links">
-          <a href="#">Code</a>
-          <a href="#">Demo</a>
-        </div>
-      </div>
+<!-- Project 3 -->
+<div class="project-card">
+  <img src="images/weather_simulation.png" alt="Weather App" />
+  <h3>Weather Simulation</h3>
+  <p>Used ARIMA + Monte Carlo for forecasts. Deployed with React and Python backend.</p>
+  <div class="tags">
+    <span class="tag python">Python</span>
+    <span class="tag react-native">React Native</span>
+    <span class="tag javascript">javascript</span>
+  </div>        
+  <div class="project-links">
+    <a href="https://github.com/Sharrabbha1/Weather_Simulation" target="_blank" rel="noopener">Code</a>
+  </div>
+</div>
 
+
+<!-- Project 4 -->
+<div class="project-card">
+  <img src="images/code_whipser.png" alt="Code Whisper" />
+  <h3> Rust + AI-Driven Static Analyzer: “CodeWhisper”</h3>
+  <p>Detects vulnerabilities like hardcoded secrets, dangerous imports, or unused code and it will also be able to suggest improvements for code quality and performance and gives an Ai response</p>
+  <div class="tags">
+    <span class="tag python">Python</span>
+    <span class="tag react-native">React Native</span>
+    <span class="tag javascript">javascript</span>
+    <span class="tag rust">Rust</span>
+    <span class="tag html">HTML</span>
+  </div>        
+  <div class="project-links">
+    <a href="https://github.com/Sharrabbha1/Code_Whisper" target="_blank" rel="noopener">Code</a>
+  </div>
+</div>
+
+  </section>
+  
+  <section id="contact" data-aos="fade-up">
+    <h2>Contact</h2>
+    <div class="social-links">
+  
+      <!-- LinkedIn -->
+      <a href="https://linkedin.com/in/suryateja-gorthi-7b9253238/" target="_blank" rel="noopener">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+             alt="LinkedIn" style="width: 24px; vertical-align: middle; margin-right: 8px;" />
+        LinkedIn
+      </a>
+  
+      <!-- GitHub (white icon) -->
+      <a href="https://github.com/Sharrabbha1" target="_blank" rel="noopener">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/github.png"
+             alt="GitHub" style="width: 24px; vertical-align: middle; margin-right: 8px;" />
+        GitHub
+      </a>
+  
+      <!-- Email (lighter icon) -->
+      <a href="mailto:2002suryateja@gmail.com">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/message-squared.png"
+             alt="Email" style="width: 24px; vertical-align: middle; margin-right: 8px;" />
+        Email
+      </a>
+  
     </div>
   </section>
-
-
-  <!-- Contact Section -->
-  <section id="contact" data-aos="fade-up" style="background: #1a1a1a; color: white; padding: 80px 20px;">
-    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; max-width: 1000px; margin: auto;">
-      <div style="flex: 1; min-width: 250px;">
-        <h2 style="text-align: left;">Let's Connect</h2>
-        <p style="text-align: left;">Open for opportunities and collaboration</p>
-      </div>
-      <div style="display: flex; gap: 20px; margin-top: 20px; flex: 1; justify-content: flex-end; min-width: 250px;">
-        <a href="https://linkedin.com/in/suryateja-gorthi-7b9253238/" target="_blank" rel="noopener"
-           style="background: white; border-radius: 50%; padding: 12px; display: flex; align-items: center; justify-content: center; width: 45px; height: 45px;">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" style="width: 20px;" />
-        </a>
-        <a href="https://github.com/Sharrabbha1" target="_blank" rel="noopener"
-           style="background: white; border-radius: 50%; padding: 12px; display: flex; align-items: center; justify-content: center; width: 45px; height: 45px;">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style="width: 20px;" />
-        </a>
-        <a href="mailto:2002suryateja@gmail.com"
-           style="background: white; border-radius: 50%; padding: 12px; display: flex; align-items: center; justify-content: center; width: 45px; height: 45px;">
-          <img src="https://img.icons8.com/ios-filled/50/000000/message-squared.png" alt="Email" style="width: 20px;" />
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
+  
   <footer>
     <p>© 2025 SuryaTeja Gorthi</p>
   </footer>
