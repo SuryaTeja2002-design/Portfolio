@@ -217,7 +217,9 @@
     .tag.git           { background: #F05032; } /* optional Git color */
     .tag.github        { background: #181717; } /* optional GitHub color */
     .tag.aws           { background: #FF9900; } /* optional AWS color */
-
+    .tag.chart         { background: #FFCA28; } /* optional Chart.js color */
+    .tag.ruby          { background: #CC342D; } /* optional Ruby color */
+    .tag.typescript    { background: #007ACC; color: #fff; } /* optional TypeScript color */
 
     .skills-list, .projects-container {
       display: flex;
@@ -327,6 +329,16 @@
       justify-items: center;
       margin-top: 40px;
     }       
+    .icon-style {
+      width: 24px;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+    .email-icon {
+      width: 24px;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
   </style>
 </head>
 <body>
@@ -342,22 +354,23 @@
 
   <section id="hero">
     <h1>Hi, I'm SuryaTeja Gorthi</h1>
-    <p>Software Developer | Data Enthusiast | Creative Problem Solver</p>
+    <p><em>Software Developer</em> &nbsp;•&nbsp; <em>Data Enthusiast</em> &nbsp;•&nbsp; <em>Creative Problem Solver</em></p>
     <a href="#projects" class="btn">View My Work</a>
   </section>
 
   <section id="about" data-aos="fade-up">
     <h2>About Me</h2>
     <p>
-      I'm a final-year Software Engineering student at Ontario Tech University, passionate about designing and developing scalable, real-world software solutions. From predictive weather models to civic engagement platforms and secure file systems, I’ve built full-stack applications that solve real problems and showcase my versatility across both frontend and backend technologies.
+      I'm a Software Engineering graduate from Ontario Tech University, passionate about designing and developing scalable, real-world software solutions. From predictive weather models to civic engagement platforms and secure file systems, I’ve built full-stack applications that solve real problems and showcase my versatility across both frontend and backend technologies.
     </p>
     <p>
-      My experience spans data analysis, mobile app development, and cloud-based infrastructure — using tools like Python, Dart, Firebase, AWS, Google Cloud, SQL, Power BI, and more. I've had the opportunity to intern with Ontario Power Generation, apprentice as a university app developer, and serve in federal elections while maintaining strong academic performance (Dean’s and President’s Honour Lists).
+      My experience spans data analysis, mobile app development, and cloud-based infrastructure — using tools like Python, Dart, Firebase, AWS, Google Cloud, SQL, Power BI, and more. I've had the opportunity to intern with Ontario Power Generation, apprentice as a university app developer, and serve in federal elections — all while graduating with distinction (Dean’s and President’s Honour Lists).
     </p>
     <p>
       I believe in combining creativity with code, and I’m always seeking projects where I can push boundaries, learn something new, and build tech that matters. Whether it's crafting secure apps, developing data pipelines, or launching desktop tools — I’m all about bringing bold ideas to life through clean, effective code.
     </p>
   </section>
+  
   
   <section id="experience" data-aos="fade-up">
     <h2>Experience</h2>
@@ -439,6 +452,9 @@
       <li class="tag nodejs">Node.js</li>
       <li class="tag git">Git</li>
       <li class="tag github">GitHub</li>
+      <li class="tag Rust">rust</li>
+      <li class="tag chart">Chart.js</li>
+
     </ul>
   </section>
   
@@ -456,6 +472,10 @@
           <span class="tag dart">Dart</span>
           <span class="tag flutter">Flutter</span>
           <span class="tag firebase">Firebase</span>
+          <span class="tag c++plusplus">C++</span>
+          <span class="tag Swift">Swift</span>
+          <span class="tag html">HTML</span>
+          <span class="tag C">c</span>
         </div>
         <div class="project-links">
           <a href="https://github.com/Sharrabbha1/FoodApp_Assignment3" target="_blank" rel="noopener">Code</a>
@@ -495,20 +515,39 @@
 
 <!-- Project 4 -->
 <div class="project-card">
-  <img src="images/code_whipser.png" alt="Code Whisper" />
-  <h3> Rust + AI-Driven Static Analyzer: “CodeWhisper”</h3>
-  <p>Detects vulnerabilities like hardcoded secrets, dangerous imports, or unused code and it will also be able to suggest improvements for code quality and performance and gives an Ai response</p>
+  <img src="images/rustbook_ai.png" alt="RustBookAI" />
+  <h3>Rust + AI Book Summarizer: “RustBookAI”</h3>
+  <p>
+    A command-line tool built in Rust that intelligently summarizes long-form book content chapter-by-chapter using AI-powered natural language processing. Leverages Rust’s concurrency model for fast, safe parsing of large texts, and integrates API-based summarization for concise, readable outputs.
+  </p>
   <div class="tags">
-    <span class="tag python">Python</span>
-    <span class="tag react-native">React Native</span>
-    <span class="tag javascript">javascript</span>
     <span class="tag rust">Rust</span>
-    <span class="tag html">HTML</span>
+    <span class="tag python">Python</span>
+    <span class="tag cli">CLI</span>
+    <span class="tag ai">AI</span>
+    <span class="tag api">API</span>
   </div>        
+</div>
+
+
+<!-- Project 5 -->
+<div class="project-card">
+  <img src="images/AI_Detector.png" alt="AI Code Quality Analyzer Dashboard" />
+  <h3>AI Code Quality Analyzer Dashboard</h3>
+  <p>Analyze `.rb`, `.py`, and `.js` files or GitHub repos to detect insecure patterns, bad practices, and risky logic. Includes visual charts, AI-powered suggestions, and JSON export.</p>
+  <div class="tags">
+    <span class="tag ruby">Ruby</span>
+    <span class="tag python">Python</span>
+    <span class="tag javascript">JavaScript</span>
+    <span class="tag html">HTML</span>
+    <span class="tag chart">Chart.js</span>
+    <span class="tag css">CSS</span>
+  </div>
   <div class="project-links">
-    <a href="https://github.com/Sharrabbha1/Code_Whisper" target="_blank" rel="noopener">Code</a>
+    <a href="https://github.com/Sharrabbha1/AI_Quality_Dashboard" target="_blank" rel="noopener">Code</a>
   </div>
 </div>
+
 
   </section>
   
@@ -519,21 +558,21 @@
       <!-- LinkedIn -->
       <a href="https://linkedin.com/in/suryateja-gorthi-7b9253238/" target="_blank" rel="noopener">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
-             alt="LinkedIn" style="width: 24px; vertical-align: middle; margin-right: 8px;" />
+             alt="LinkedIn" class="icon-style" />
         LinkedIn
       </a>
   
       <!-- GitHub (white icon) -->
       <a href="https://github.com/Sharrabbha1" target="_blank" rel="noopener">
         <img src="https://img.icons8.com/ios-filled/50/ffffff/github.png"
-             alt="GitHub" style="width: 24px; vertical-align: middle; margin-right: 8px;" />
+             alt="GitHub" class="icon-style" />
         GitHub
       </a>
   
       <!-- Email (lighter icon) -->
       <a href="mailto:2002suryateja@gmail.com">
         <img src="https://img.icons8.com/ios-filled/50/ffffff/message-squared.png"
-             alt="Email" style="width: 24px; vertical-align: middle; margin-right: 8px;" />
+             alt="Email" class="email-icon" />
         Email
       </a>
   
