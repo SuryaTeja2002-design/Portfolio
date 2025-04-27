@@ -6,69 +6,120 @@
   <title>SuryaTeja Gorthi – Resume</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      padding: 40px;
-      background-color: #f9f9f9;
-      color: #333;
+      padding: 30px;
+      background: linear-gradient(135deg, #000000, #0d0d2b);
+      color: #eee;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       line-height: 1.6;
     }
-    h1, h2 {
-      color: #111;
-      margin-bottom: 0.2em;
-    }
-    h2 {
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 0.2em;
-      margin-top: 2em;
-    }
-    .section { margin-bottom: 2em; }
-    .contact a { color: #0066cc; text-decoration: none; }
-    ul { padding-left: 1.2em; }
-    .title { font-weight: bold; }
-    .date { float: right; color: #555; font-style: italic; }
-    .clearfix::after { content: ""; display: table; clear: both; }
 
-    /* PRINT OPTIMIZATION */
+    h1, h2 {
+      color: #00f0ff;
+      margin-bottom: 0.4em;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      text-align: center;
+      background: linear-gradient(90deg, #00f0ff, #ff00f7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .section {
+      background: rgba(0,0,0,0.6);
+      padding: 25px;
+      margin-bottom: 2em;
+      border-radius: 15px;
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      box-shadow: 0 0 12px rgba(0,240,255,0.3);
+    }
+
+    .section:hover {
+      box-shadow: 0 0 20px rgba(255,0,247,0.5);
+      transition: all 0.3s ease;
+    }
+
+    .title {
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+
+    .date {
+      float: right;
+      color: #999;
+      font-style: italic;
+    }
+
+    a {
+      color: #00f0ff;
+      text-decoration: none;
+    }
+
+    ul {
+      padding-left: 1.2em;
+    }
+
+    .footer-buttons {
+      display: flex;
+      justify-content: center;
+      margin-top: 4em;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-buttons a, .footer-buttons button {
+      padding: 12px 25px;
+      background: linear-gradient(90deg, #00f0ff, #ff00f7);
+      color: black;
+      border: none;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .footer-buttons a:hover, .footer-buttons button:hover {
+      background: linear-gradient(90deg, #ff00f7, #00f0ff);
+    }
+
+    /* PRINT MODE */
     @media print {
       body {
         background: white;
         color: black;
         padding: 0;
         margin: 0;
-        font-size: 11pt;
-        line-height: 1.4;
       }
       h1, h2 {
         color: black;
-        page-break-after: avoid;
       }
       .section {
-        page-break-inside: avoid;
+        background: none;
+        box-shadow: none;
       }
-      a[href]:after {
-        content: "";
-      }
-      /* Hide buttons in print */
       .footer-buttons {
         display: none !important;
       }
     }
   </style>
 </head>
+
 <body>
 
-  <div style="text-align: right;">
-    <h1>SuryaTeja Gorthi</h1>
-    <p><strong>Software Engineer — Backend • Cloud • AI • Security</strong></p>
-  </div>
+  <h1>SuryaTeja Gorthi</h1>
+  <p style="text-align: center;"><strong>Software Engineer • Data Analyst • Backend • Cloud • AI • CyberSecurity</strong></p>
 
-  <div class="section contact">
+  <div class="section">
     <h2>Contact Information</h2>
     <p><strong>Phone:</strong> <a href="tel:+16478251058">(647) 825-1058</a></p>
     <p><strong>Email:</strong> <a href="mailto:2002suryateja@gmail.com">2002suryateja@gmail.com</a></p>
     <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/suryateja-gorthi-7b9253238/" target="_blank" rel="noopener">linkedin.com/in/suryateja-gorthi</a></p>
-    <p><strong>GitHub:</strong> <a href="https://github.com/Sharrabbha1" target="_blank" rel="noopener">github.com/Sharrabbha1</a></p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/SuryaTeja2002-design" target="_blank" rel="noopener">github.com/Sharrabbha1</a></p>
     <p><strong>Portfolio:</strong> <a href="https://sharrabbha1.github.io/Portfolio/" target="_blank" rel="noopener">sharrabbha1.github.io/Portfolio</a></p>
   </div>
 
@@ -81,67 +132,48 @@
     <h2>Education</h2>
     <p><span class="title">BEng. Software Engineering</span> <span class="date">Sept 2020 – April 2025</span><br />
     Ontario Tech University<br />
-    Graduated with distinction. Completed advanced coursework in distributed systems, cloud platforms, cybersecurity, and data engineering.<br />
-    <strong>Honors:</strong> President’s Honor List (Fall 2020), Dean’s List of Honour (Fall 2024)</p>
+    <strong>Honors:</strong> President’s Honor List, Dean’s List of Honour</p>
   </div>
 
   <div class="section">
     <h2>Technical Skills</h2>
-    <p><strong>Languages:</strong> Python (FastAPI, pandas, NumPy), Java (Spring Boot), Rust (tokio, clap), Dart (Flutter), JavaScript (ES6+), TypeScript, SQL (T-SQL, BigQuery), C++, C#, Ruby, DAX</p>
-    <p><strong>Frontend & Mobile:</strong> React, React Native (Expo), Flutter, HTML5, CSS3, Tailwind, PHP (Laravel), Angular, REST APIs, JSON</p>
-    <p><strong>Cloud & DevOps:</strong> Firebase, GCP (BigQuery, Pub/Sub, Dataflow), AWS (S3, IAM, Lambda), Docker, GitHub Actions, Vercel</p>
-    <p><strong>Backend & AI:</strong> FastAPI, Apache Beam, TensorFlow, SQL Server, ETL pipelines, Firestore Rules, model evaluation</p>
-    <p><strong>Security & Testing:</strong> OAuth2, JWT, IAM Roles, SQLi prevention, XSS/CSRF defense, Wireshark, secure file handling</p>
-    <p><strong>Tools:</strong> Power BI, Power Apps, Tableau, Git, VS Code, IntelliJ, Android Studio, Xcode, SolidWorks</p>
+    <ul>
+      <li>Languages: Python, Java, Rust, Dart, JavaScript, TypeScript, SQL, C++, C#, Ruby, DAX</li>
+      <li>Frontend: React, React Native, Flutter, HTML, CSS, Tailwind, PHP (Laravel), Angular</li>
+      <li>Cloud: Firebase, Google Cloud, AWS, Docker, GitHub Actions</li>
+      <li>Backend & AI: FastAPI, Apache Beam, TensorFlow, ETL pipelines, Firestore</li>
+      <li>Security: OAuth2, JWT, SQL Injection Prevention, XSS/CSRF Defense, Wireshark</li>
+      <li>Tools: Power BI, Tableau, Git, VS Code, IntelliJ, Android Studio, Xcode</li>
+    </ul>
   </div>
 
   <div class="section">
     <h2>Work Experience</h2>
-
-    <div class="clearfix">
-      <span class="title">Information Officer – Elections Canada</span>
-      <span class="date">March 2025 – Present</span>
-    </div>
+    <p><span class="title">Information Officer – Elections Canada</span> <span class="date">Mar 2025 – Present</span></p>
     <ul>
-      <li>Guided electors through secure system navigation, registration, and voting verification processes</li>
-      <li>Enforced Elections Canada protocols to ensure smooth, compliant voting day operations</li>
-      <li>Managed voter data access and ensured security of sensitive registration systems</li>
-      <li>Resolved technical and logistical issues in real time to maintain flow and efficiency</li>
+      <li>Guided electors through secure system navigation, registration, and voting verification processes.</li>
+      <li>Managed sensitive voter data access and system integrity.</li>
     </ul>
 
-    <div class="clearfix">
-      <span class="title">Data Analyst Intern – Ontario Power Generation</span>
-      <span class="date">May 2023 – May 2024</span>
-    </div>
+    <p><span class="title">Data Analyst Intern – Ontario Power Generation</span> <span class="date">May 2023 – May 2024</span></p>
     <ul>
-      <li>Developed analytics solutions using Power Apps, SQL Server, and Power BI</li>
-      <li>Designed and automated ETL pipelines for streamlined data workflows</li>
-      <li>Built interactive dashboards to support real-time safety and performance decisions</li>
-      <li>Maintained high data integrity and system efficiency</li>
+      <li>Built and automated ETL pipelines, Power BI dashboards, and optimized workflows.</li>
     </ul>
 
-    <div class="clearfix">
-      <span class="title">Software Engineer – Ontario Tech University</span>
-      <span class="date">Nov 2022 – Apr 2023</span>
-    </div>
+    <p><span class="title">Software Engineer – Ontario Tech University</span> <span class="date">Nov 2022 – Apr 2023</span></p>
     <ul>
-      <li>Built and deployed a mobile-first internal app using Flutter and Firebase</li>
-      <li>Implemented secure authentication and Firestore-based data sync</li>
-      <li>Collaborated across departments to gather requirements and iterate MVP</li>
-      <li>Delivered an internal prototype supporting feature testing</li>
+      <li>Developed mobile apps using Flutter, Firebase backend, and Python APIs.</li>
     </ul>
   </div>
 
   <div class="section">
     <h2>Projects</h2>
     <ul>
-      <li><strong>By-Laws Municipal App:</strong> Civic reporting platform built with React Native + Firebase. Includes dashboards, workflows, image/video submission, and offline support.</li>
-      <li><strong>WeatherSimulation:</strong> Full-stack forecasting platform using ARIMA and Monte Carlo. Visualized 90-day forecasts across 6 cities.</li>
-      <li><strong>AWS S3 File Manager:</strong> Role-based file manager with secure upload/view/delete access via IAM roles and lifecycle rules.</li>
-      <li><strong>MNIST Dataflow (GCP):</strong> Real-time + batch ML pipeline using Apache Beam, Pub/Sub, BigQuery, and Dockerized TensorFlow.</li>
-      <li><strong>RustBookAI:</strong> AI-powered Rust CLI tool for long-form book summarization using async APIs and multithreading.</li>
-      <li><strong>AI Code Quality Dashboard:</strong> Full-stack tool (React + Flask +) to detect insecure patterns with GPT-based fix suggestions.</li>
-      <li><strong>Portfolio Website:</strong> Personal website with SVG visuals, animations, and project breakdowns. Hosted via GitHub Pages.</li>
+      <li>By-Laws App (React Native + Firebase)</li>
+      <li>Weather Simulation (React + Python)</li>
+      <li>AWS S3 Manager (Role-based Access Control)</li>
+      <li>RustBookAI (Rust + AI APIs)</li>
+      <li>AI Code Quality Dashboard (React + Flask + GPT)</li>
     </ul>
   </div>
 
@@ -149,7 +181,7 @@
     <h2>Certifications</h2>
     <ul>
       <li>Google Data Analytics Professional Certificate (2024)</li>
-      <li>Data Fusion Challenge – Autonomous AI Vehicles (2025)</li>
+      <li>Data Fusion Challenge — AI for Autonomous Vehicles (2025)</li>
     </ul>
   </div>
 
@@ -158,37 +190,9 @@
     <p>Available upon request.</p>
   </div>
 
-  <!-- Footer buttons (non-sticky, print-hidden) -->
-  <div class="footer-buttons" style="
-    margin-top: 4em;
-    padding-top: 2em;
-    border-top: 1px solid #ccc;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-  ">
-    <a href="index.html" style="
-      padding: 12px 24px;
-      background-color: #0066cc;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 16px;
-    ">← Back to Home</a>
-
-    <button onclick="window.print()" style="
-      padding: 12px 24px;
-      background-color: #333;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      font-weight: bold;
-      font-size: 16px;
-      cursor: pointer;
-    ">📄 Download as PDF</button>
+  <div class="footer-buttons">
+    <a href="index.html">← Back to Home</a>
+    <button onclick="window.print()">📄 Download as PDF</button>
   </div>
 
 </body>
