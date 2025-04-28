@@ -44,5 +44,4 @@ Explore my full portfolio and live projects 👉 [Portfolio Website](https://you
 
 ---
 
-> **"Ready to deliver real-world solutions from Day 1 — not just years of experience, but true impact."**
 
