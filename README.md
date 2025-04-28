@@ -12,7 +12,7 @@ I've built multiple full-stack production-grade applications using modern techno
 ---
 
 ## 🛠️ Skills
-- **Languages:** Python, Rust, Java, Dart, JavaScript, SQL
+- **Languages:** Python, Rust, Java, Dart, JavaScript, SQL, C#, c++
 - **Frontend & Mobile:** Flutter, React Native, Angular, HTML5/CSS3
 - **Cloud & DevOps:** Firebase, GCP, AWS, Docker, GitHub Actions
 - **Data & Security:** SQL Server, BigQuery, OAuth2, JWT, IAM, ETL Pipelines
@@ -43,5 +43,5 @@ Explore my full portfolio and live projects 👉 [Portfolio Website](https://you
 - 🛠️ GitHub: [github.com/Sharrabbha1](https://github.com/Sharrabbha1)
 
 ---
-
+**#SoftwareEngineer #DataEngineer #FlutterDeveloper #CloudDeveloper #RustDeveloper #BackendEngineer #CyberSecurity #GCP #AWS #Firebase #Docker #SQLServer #GitHubPortfolio**
 
