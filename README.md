@@ -33,7 +33,7 @@ I've built multiple full-stack production-grade applications using modern techno
 ---
 
 ## 🚀 Portfolio
-Explore my full portfolio and live projects 👉 [Portfolio Website](https://your-portfolio-link.com)
+Explore my full portfolio and live projects 👉 [Portfolio Website](https://suryateja2002-design.github.io/Portfolio/).
 
 ---
 
