@@ -8,7 +8,8 @@
 
 I'm a passionate engineer who loves building scalable backend systems, AI-enabled platforms, and secure cloud-native applications. From AI dashboards and Rust-based CLI tools to mobile-first civic apps and GCP pipelines, I enjoy working across the full stack.
 
-I bring hands-on experience with production systems, fast prototyping using **Flutter**, data pipelines via **Apache Beam**, and secure APIs powered by **GCP**, **Docker**, and **FastAPI**.
+I bring hands-on experience with production systems, fast prototyping using **Flutter**, data pipelines via **Apache Beam**, and secure APIs powered by **GCP**, **Docker**, and **FastAPI**. Currently preparing to begin my Master’s in Cybersecurity at Toronto Metropolitan University in Fall 2025, with a focus on secure systems and digital trust in public infrastructure.
+
 
 ---
 
