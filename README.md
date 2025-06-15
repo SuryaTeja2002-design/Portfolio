@@ -1,6 +1,7 @@
 # 👋 Hi, I'm SuryaTeja Gorthi
 
-🚀 Software Engineer | Data Analyst | Cloud Enthusiast | Cybersecurity Advocate
+## Interested roles
+🚀 Software Engineer | Data Engineer | Cloud developer | Cybersecurity Analyst | Full Stack Developer | Web Developer
 
 ---
 
