@@ -1007,3 +1007,49 @@ html {
   transform: translateY(-5px);
   box-shadow: 0 0 20px rgba(0,255,255,0.5);
 }
+
+.edu-card {
+  background-color: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  padding: 1.5em;
+  margin-bottom: 2em;
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.edu-card:hover {
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.2);
+}
+
+.edu-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.edu-school {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #00f0ff;
+  margin: 0;
+}
+
+.edu-date {
+  font-size: 0.95em;
+  color: #aaa;
+  font-style: italic;
+}
+
+.edu-degree {
+  font-style: italic;
+  color: #ccc;
+  margin: 0.4em 0 0.6em;
+}
+
+.edu-details {
+  color: #eee;
+  line-height: 1.5;
+  margin: 0;
+}
+
