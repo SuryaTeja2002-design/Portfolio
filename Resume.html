@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resume — SuryaTeja Gorthi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600&family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --bg:#080b0f;--bg2:#0d1117;--border:rgba(0,240,170,0.12);--border-bright:rgba(0,240,170,0.35);
+      --accent:#00f0aa;--accent2:#00aaff;--text:#e2e8f0;--text-dim:#8b99ac;--text-bright:#f0f6ff;
+      --mono:'IBM Plex Mono',monospace;--sans:'Syne',sans-serif;--body:'Inter',sans-serif;
+    }
+    *{margin:0;padding:0;box-sizing:border-box;}
+    html{scroll-behavior:smooth;}
+    body{background:var(--bg);color:var(--text);font-family:var(--body);font-weight:300;line-height:1.7;-webkit-font-smoothing:antialiased;}
+    body::before{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;
+      background-image:linear-gradient(rgba(0,240,170,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(0,240,170,0.03) 1px,transparent 1px);
+      background-size:60px 60px;}
+    .resume-nav{position:sticky;top:0;z-index:100;background:rgba(8,11,15,0.95);backdrop-filter:blur(20px);
+      border-bottom:1px solid var(--border);padding:0 40px;height:56px;display:flex;align-items:center;justify-content:space-between;}
+    .resume-nav-logo{font-family:var(--mono);font-size:0.85rem;color:var(--accent);}
+    .resume-nav-links{display:flex;gap:24px;align-items:center;}
+    .resume-nav-links a{font-family:var(--mono);font-size:0.75rem;color:var(--text-dim);text-decoration:none;transition:color 0.2s;}
+    .resume-nav-links a:hover{color:var(--accent);}
+    .btn-print{background:var(--accent);color:#000;border:none;font-family:var(--mono);font-size:0.75rem;font-weight:600;
+      padding:7px 16px;border-radius:3px;cursor:pointer;transition:all 0.2s;}
+    .btn-print:hover{background:var(--accent2);}
+    .resume-wrapper{position:relative;z-index:1;max-width:900px;margin:48px auto 80px;padding:0 24px;}
+    .r-header{border:1px solid var(--border-bright);border-radius:6px;padding:36px 40px;margin-bottom:20px;
+      background:rgba(13,17,23,0.8);display:grid;grid-template-columns:1fr auto;gap:24px;align-items:start;}
+    .r-header h1{font-family:var(--sans);font-weight:800;font-size:2.4rem;color:var(--text-bright);line-height:1.1;margin-bottom:6px;}
+    .r-header h1 span{color:var(--accent);}
+    .r-title{font-family:var(--mono);font-size:0.78rem;color:var(--accent);letter-spacing:0.08em;margin-bottom:16px;}
+    .r-contact-list{display:flex;flex-wrap:wrap;gap:16px;}
+    .r-contact-list a,.r-contact-list span{font-family:var(--mono);font-size:0.73rem;color:var(--text-dim);text-decoration:none;display:flex;align-items:center;gap:6px;}
+    .r-contact-list a:hover{color:var(--accent);}
+    .r-contact-list i{color:var(--accent);font-size:0.7rem;}
+    .r-badges{display:flex;flex-direction:column;gap:8px;align-items:flex-end;}
+    .r-badge{font-family:var(--mono);font-size:0.65rem;background:rgba(0,240,170,0.08);border:1px solid var(--border-bright);
+      color:var(--accent);padding:4px 12px;border-radius:2px;letter-spacing:0.06em;white-space:nowrap;}
+    .r-section{background:rgba(13,17,23,0.8);border:1px solid var(--border);border-radius:6px;padding:28px 40px;margin-bottom:16px;}
+    .r-section-title{font-family:var(--mono);font-size:0.65rem;color:var(--accent);letter-spacing:0.14em;text-transform:uppercase;
+      border-bottom:1px solid var(--border);padding-bottom:10px;margin-bottom:20px;}
+    .r-job{margin-bottom:22px;padding-bottom:22px;border-bottom:1px solid var(--border);}
+    .r-job:last-child{margin-bottom:0;padding-bottom:0;border-bottom:none;}
+    .r-job-header{display:grid;grid-template-columns:1fr auto;gap:16px;margin-bottom:4px;align-items:baseline;}
+    .r-job-title{font-family:var(--sans);font-weight:700;font-size:0.98rem;color:var(--text-bright);}
+    .r-job-date{font-family:var(--mono);font-size:0.68rem;color:var(--accent);white-space:nowrap;}
+    .r-job-company{font-family:var(--mono);font-size:0.73rem;color:var(--text-dim);margin-bottom:12px;}
+    .r-job-company span{color:var(--accent);}
+    .r-job ul{list-style:none;display:flex;flex-direction:column;gap:7px;}
+    .r-job ul li{font-size:0.87rem;color:var(--text-dim);padding-left:16px;position:relative;line-height:1.65;}
+    .r-job ul li::before{content:'→';position:absolute;left:0;color:var(--accent);font-size:0.75rem;}
+    .r-job ul li strong{color:var(--text);font-weight:500;}
+    .r-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:10px;}
+    .r-tags span{font-family:var(--mono);font-size:0.63rem;background:rgba(0,0,0,0.4);border:1px solid var(--border);color:var(--text-dim);padding:2px 8px;border-radius:2px;}
+    .r-skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;}
+    .r-skill-group h4{font-family:var(--mono);font-size:0.65rem;color:var(--accent);letter-spacing:0.1em;margin-bottom:6px;text-transform:uppercase;}
+    .r-skill-group p{font-family:var(--mono);font-size:0.73rem;color:var(--text-dim);line-height:1.8;}
+    .r-edu-item{display:grid;grid-template-columns:1fr auto;gap:16px;margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid var(--border);align-items:baseline;}
+    .r-edu-item:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0;}
+    .r-edu-degree{font-family:var(--sans);font-weight:700;font-size:0.93rem;color:var(--text-bright);margin-bottom:2px;}
+    .r-edu-school{font-family:var(--mono);font-size:0.72rem;color:var(--text-dim);}
+    .r-edu-date{font-family:var(--mono);font-size:0.68rem;color:var(--accent);white-space:nowrap;}
+    .r-honours{display:flex;flex-wrap:wrap;gap:8px;}
+    .r-honour{font-family:var(--mono);font-size:0.7rem;background:rgba(0,240,170,0.08);border:1px solid var(--border);color:var(--accent);padding:4px 12px;border-radius:2px;}
+    @media print{
+      body{background:#fff;color:#000;}body::before{display:none;}.resume-nav{display:none;}
+      .r-header,.r-section{border-color:#ccc;background:#fff;}
+      .r-header h1,.r-job-title,.r-edu-degree{color:#000;}
+      .r-title,.r-job-date,.r-edu-date,.r-section-title,.r-job-company{color:#007a55;}
+      .r-job ul li,.r-edu-school,.r-skill-group p{color:#333;}
+      .r-badge,.r-honour{background:#e8f8f3;border-color:#007a55;color:#007a55;}
+      .r-tags span{background:#f0f0f0;border-color:#ccc;color:#333;}
+      .resume-wrapper{margin:0;padding:0 16px;}
+    }
+    @media(max-width:600px){
+      .resume-nav{padding:0 16px;}.resume-wrapper{padding:0 12px;margin:24px auto 60px;}
+      .r-header{grid-template-columns:1fr;padding:20px;}.r-badges{flex-direction:row;flex-wrap:wrap;}
+      .r-section{padding:18px;}.r-job-header{grid-template-columns:1fr;}.r-skills-grid{grid-template-columns:1fr;}
+      .r-edu-item{grid-template-columns:1fr;}
+    }
+  </style>
+</head>
+<body>
+
+<nav class="resume-nav">
+  <span class="resume-nav-logo">[ST/GORTHI] — Resume</span>
+  <div class="resume-nav-links">
+    <a href="index.html">← Portfolio</a>
+    <a href="https://www.linkedin.com/in/suryatejagorthi/" target="_blank">LinkedIn</a>
+    <a href="https://github.com/SuryaTeja2002-design" target="_blank">GitHub</a>
+    <button class="btn-print" onclick="window.print()">⬇ Download / Print</button>
+  </div>
+</nav>
+
+<div class="resume-wrapper">
+
+  <div class="r-header">
+    <div>
+      <h1>SuryaTeja <span>Gorthi</span></h1>
+      <div class="r-title">AI ENGINEER · DATA ENGINEER · CYBERSECURITY SPECIALIST</div>
+      <div class="r-contact-list">
+        <a href="mailto:2002suryateja@gmail.com"><i class="fa-solid fa-envelope"></i>2002suryateja@gmail.com</a>
+        <a href="https://www.linkedin.com/in/suryatejagorthi/" target="_blank"><i class="fa-brands fa-linkedin"></i>linkedin.com/in/suryatejagorthi</a>
+        <a href="https://github.com/SuryaTeja2002-design" target="_blank"><i class="fa-brands fa-github"></i>github.com/SuryaTeja2002-design</a>
+        <span><i class="fa-solid fa-location-dot"></i>Scarborough, ON, Canada</span>
+      </div>
+    </div>
+    <div class="r-badges">
+      <span class="r-badge">OPEN TO WORK</span>
+      <span class="r-badge">CEH CERTIFIED</span>
+      <span class="r-badge">TOP 7% — CTF 2026</span>
+      <span class="r-badge">OPG CLEARANCE</span>
+    </div>
+  </div>
+
+  <div class="r-section">
+    <div class="r-section-title">// PROFESSIONAL EXPERIENCE</div>
+
+    <div class="r-job">
+      <div class="r-job-header">
+        <span class="r-job-title">AI &amp; Automation Developer</span>
+        <span class="r-job-date">Jul 2025 – Jan 2026</span>
+      </div>
+      <div class="r-job-company">Manulife <span>· Toronto, ON</span></div>
+      <ul>
+        <li>Architected and deployed a Power Automate solution integrating the Siteimprove web accessibility API with Jira — <strong>fully eliminating manual remediation tracking across 6 enterprise websites</strong> with zero human intervention; delivered as both Cloud Flow and Desktop RPA.</li>
+        <li>Built a Power BI dashboard that progressed from prototype to <strong>full production deployment</strong>, adopted by operational teams and senior directors across the organization and an affiliated US entity.</li>
+        <li>Evaluated Copilot Studio agentic workflows with GPT-4 for compliance automation — identified and documented critical blockers including hallucination rates and credential security risks, leading the team to pivot to a more reliable approach.</li>
+        <li>Contributed to a GenAI Proof of Concept leveraging LLMs and Azure infrastructure to accelerate a Business Intelligence migration workflow, demonstrating feasibility at enterprise scale.</li>
+      </ul>
+      <div class="r-tags">
+        <span>Power Automate</span><span>Siteimprove API</span><span>Jira</span><span>Power BI</span><span>Copilot Studio</span><span>GPT-4</span><span>Azure</span><span>RPA</span>
+      </div>
+    </div>
+
+    <div class="r-job">
+      <div class="r-job-header">
+        <span class="r-job-title">AI Engineer — RAG &amp; Agentic Systems</span>
+        <span class="r-job-date">Jun 2025 – Jan 2026</span>
+      </div>
+      <div class="r-job-company">Tata Consultancy Services <span>· Toronto, ON</span></div>
+      <ul>
+        <li>Built an internal RAG pipeline on <strong>Azure OpenAI (GPT + text embeddings) with FAISS indexing</strong> enabling code cleaning, summarization, and document analysis at enterprise scale.</li>
+        <li>Developed an <strong>agentic AI system using LangGraph and Gemini API</strong> capable of multi-step autonomous reasoning with real tool orchestration.</li>
+        <li>Engineered data ingestion, chunking, and embedding pipelines for unstructured enterprise data; applied semantic chunking to preserve contextual coherence across document boundaries.</li>
+        <li>Applied security and governance principles to AI deployments ensuring outputs were reliable, auditable, and safe for regulated financial environments.</li>
+      </ul>
+      <div class="r-tags">
+        <span>Azure OpenAI</span><span>FAISS</span><span>LangGraph</span><span>Gemini API</span><span>RAG</span><span>LangChain</span><span>Agentic AI</span><span>Embeddings</span>
+      </div>
+    </div>
+
+    <div class="r-job">
+      <div class="r-job-header">
+        <span class="r-job-title">Data Engineer — Support &amp; Scheduling</span>
+        <span class="r-job-date">May 2023 – May 2024</span>
+      </div>
+      <div class="r-job-company">Ontario Power Generation <span>· Pickering, ON</span></div>
+      <ul>
+        <li>Engineered ETL pipelines for nuclear plant operations where data integrity is a <strong>regulatory requirement</strong>. Achieved a flawless data accuracy record across the full internship period.</li>
+        <li>Built Power BI reporting used by engineering leadership: a Work Order Dashboard tracking 434 active work orders, and a 90-Day Lookahead Dashboard for radiation monitoring equipment across reactor units.</li>
+        <li>Wrote and optimized DAX calculations, automated data refresh schedules, and designed calendar-based chart layouts giving operations teams visibility weeks ahead.</li>
+        <li>Supported a <strong>Power Apps canvas tool</strong> for engineering staff to search, filter, and manage work orders — formally recognized by senior leadership.</li>
+        <li>Independently prototyped a second Power App for HR use cases — allowing staff to look up employees by location, view profiles, and add records.</li>
+      </ul>
+      <div class="r-tags">
+        <span>SQL Server</span><span>Power BI</span><span>Power Apps</span><span>DAX</span><span>ETL</span><span>Canvas Apps</span><span>Nuclear Operations</span>
+      </div>
+    </div>
+
+    <div class="r-job">
+      <div class="r-job-header">
+        <span class="r-job-title">Software Application Developer</span>
+        <span class="r-job-date">Nov 2022 – Apr 2023</span>
+      </div>
+      <div class="r-job-company">Ontario Tech University — Brilliant Catalyst <span>· Oshawa, ON</span></div>
+      <ul>
+        <li>Built and deployed a production mobile application using Flutter and Firebase — from architecture to launch — with secure authentication, real-time data sync, and a UI designed for actual university users.</li>
+        <li>Delivered the full MVP on schedule through cross-functional collaboration without slipping the deadline.</li>
+      </ul>
+      <div class="r-tags"><span>Flutter</span><span>Firebase</span><span>Dart</span><span>Agile</span><span>Mobile Development</span></div>
+    </div>
+
+  </div>
+
+  <div class="r-section">
+    <div class="r-section-title">// EDUCATION</div>
+    <div class="r-edu-item">
+      <div>
+        <div class="r-edu-degree">Master of Cybersecurity (Course-Based)</div>
+        <div class="r-edu-school">Toronto Metropolitan University · Scarborough, ON</div>
+      </div>
+      <span class="r-edu-date">Sep 2025 – Aug 2026</span>
+    </div>
+    <div class="r-edu-item">
+      <div>
+        <div class="r-edu-degree">Bachelor of Engineering — Computer Software Engineering (Honours)</div>
+        <div class="r-edu-school">Ontario Tech University · Oshawa, ON · President's List · Dean's List · Honour Roll</div>
+      </div>
+      <span class="r-edu-date">Sep 2020 – May 2025</span>
+    </div>
+  </div>
+
+  <div class="r-section">
+    <div class="r-section-title">// CERTIFICATIONS &amp; HONOURS</div>
+    <div class="r-honours">
+      <span class="r-honour">Securing AI &amp; Advanced Topics — Johns Hopkins</span>
+      <span class="r-honour">Advanced Malware &amp; Network Anomaly Detection — Johns Hopkins</span>
+      <span class="r-honour">Introduction to AI for Cybersecurity — Johns Hopkins</span>
+      <span class="r-honour">Certified Ethical Hacker (CEH) — Specialization</span>
+      <span class="r-honour">Google Data Analytics Professional</span>
+      <span class="r-honour">OPG Security Clearance</span>
+      <span class="r-honour">7th Place — Mastercard Cybersecurity CTF 2026</span>
+      <span class="r-honour">TryHackMe: 2026 An AI Odyssey CTF</span>
+      <span class="r-honour">President's List</span>
+      <span class="r-honour">Dean's List</span>
+      <span class="r-honour">Honour Roll</span>
+    </div>
+  </div>
+
+  <div class="r-section">
+    <div class="r-section-title">// TECHNICAL SKILLS</div>
+    <div class="r-skills-grid">
+      <div class="r-skill-group">
+        <h4>GenAI &amp; LLMs</h4>
+        <p>LangChain · LangGraph · Azure OpenAI · GPT-4o · Gemini API · FAISS · RAG Pipelines · Agentic AI · Embeddings · Prompt Engineering · Copilot Studio</p>
+      </div>
+      <div class="r-skill-group">
+        <h4>Security &amp; GRC</h4>
+        <p>MITRE ATT&amp;CK / ATLAS · NIST CSF 2.0 · ISO 27001 · SOC 2 · Splunk · Kali Linux · Threat Modeling · OAuth 2.0 · JWT · IAM · CEH</p>
+      </div>
+      <div class="r-skill-group">
+        <h4>Data &amp; Analytics</h4>
+        <p>ETL Pipelines · SQL Server · PostgreSQL · NoSQL · Power BI · Power Apps · DAX · Tableau · Firestore · Apache Beam</p>
+      </div>
+      <div class="r-skill-group">
+        <h4>Frameworks &amp; Cloud</h4>
+        <p>React · Node.js · FastAPI · Flask · Spring Boot · Flutter · Firebase · Azure · AWS · GCP · Docker · Kubernetes · Kafka · Terraform</p>
+      </div>
+      <div class="r-skill-group">
+        <h4>Languages</h4>
+        <p>Python · Java · JavaScript · TypeScript · PHP · SQL · Rust · C++ · C# · Ruby · Dart · HTML · CSS</p>
+      </div>
+      <div class="r-skill-group">
+        <h4>Testing &amp; DevOps</h4>
+        <p>JUnit · Pytest · Postman · Git · GitHub · GitLab · Maven · GitHub Actions · Power Automate</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="r-section">
+    <div class="r-section-title">// KEY PROJECTS</div>
+    <div class="r-job">
+      <div class="r-job-header">
+        <span class="r-job-title">PhishGuard AI — Adversarial Phishing URL Detector</span>
+        <a href="https://phishing-detector-9xr8.onrender.com" target="_blank" style="font-family:var(--mono);font-size:0.7rem;color:var(--accent);text-decoration:none;">Live Demo →</a>
+      </div>
+      <ul>
+        <li>4-model ensemble (Gradient Boosting, Random Forest, Neural Net, SVM) with 30+ engineered features achieving 94% detection accuracy — live at phishing-detector-9xr8.onrender.com.</li>
+      </ul>
+      <div class="r-tags"><span>Python</span><span>scikit-learn</span><span>Flask</span><span>4-Model Ensemble</span><span>Render</span></div>
+    </div>
+    <div class="r-job">
+      <div class="r-job-header">
+        <span class="r-job-title">GRC Risk Engine — AI-Powered Governance, Risk &amp; Compliance Tool</span>
+        <a href="https://suryateja2002-design.github.io/grc-risk-engine/" target="_blank" style="font-family:var(--mono);font-size:0.7rem;color:var(--accent);text-decoration:none;">Live Tool →</a>
+      </div>
+      <ul>
+        <li>Single-file client-side GRC platform implementing NIST CSF 2.0, ISO 27001, SOC 2, and CIS Controls with live risk heatmap, AI remediation generator, and export to Excel/PDF/HTML.</li>
+      </ul>
+      <div class="r-tags"><span>Vanilla JS</span><span>NIST CSF 2.0</span><span>ISO 27001</span><span>SOC 2</span><span>Chart.js</span><span>SheetJS</span></div>
+    </div>
+    <div class="r-job">
+      <div class="r-job-header">
+        <span class="r-job-title">Enterprise RAG Pipeline — LangChain + Azure OpenAI</span>
+        <a href="https://github.com/SuryaTeja2002-design/azure-etl-retrieval" target="_blank" style="font-family:var(--mono);font-size:0.7rem;color:var(--accent);text-decoration:none;">GitHub →</a>
+      </div>
+      <ul>
+        <li>Production RAG system grounding GPT-4o on 100,000+ enterprise documents with semantic chunking, FAISS indexing, and hallucination circuit-breaker for financial compliance safety.</li>
+      </ul>
+      <div class="r-tags"><span>LangChain</span><span>Azure OpenAI</span><span>FAISS</span><span>LangGraph</span><span>Python</span></div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
