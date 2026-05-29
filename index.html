@@ -3,403 +3,661 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SuryaTeja Gorthi | Software Engineer</title>
+  <title>SuryaTeja Gorthi | AI Security Specialist & Data Engineer</title>
+  <meta name="description" content="SuryaTeja Gorthi – GenAI Systems Engineer, Data Architect, and Cybersecurity Specialist. Expert in RAG pipelines, LLM security, adversary simulation, and enterprise AI at scale.">
+  <meta name="keywords" content="SuryaTeja Gorthi, GenAI Engineer, Data Engineer, Cybersecurity Analyst, LangChain, RAG Pipelines, Azure OpenAI, Security Architecture, CTF, Phishing Detection, GRC Risk Engine, NIST CSF, LLM, Canada, Power BI, Power Apps, Kubernetes, Kafka, Terraform, Spring Boot, Node.js, Flutter, PostgreSQL, Tableau, OAuth2, JWT, JUnit, Pytest, Ruby, Dart, C#, Firebase, Docker, GitLab, Maven">
+  <meta name="author" content="SuryaTeja Gorthi">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600&family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" defer></script>
-  <script src="script.js" defer></script>
-<meta name="description" content="SuryaTeja Gorthi – Generative AI Developer and Data Engineer with experience in Azure OpenAI, RAG pipelines, Power Platform automation, cloud systems, and cybersecurity.">
-<meta name="keywords" content="SuryaTeja Gorthi, Software Developer, Cloud Developer, Data Engineer, Flutter Developer, Rust Developer, Firebase, GCP, AWS, Cybersecurity, GitHub Portfolio, Software Engineer Canada, Backend Developer">
-<meta name="author" content="SuryaTeja Gorthi">
-
 </head>
 <body>
 
-<div id="particles-js"></div>
+<div class="scanlines"></div>
+<div class="noise-overlay"></div>
+<div class="grid-bg"></div>
 
-<header>
-  <div class="logo">SuryaTeja</div>
-  <nav>
-    <ul>
-      <li><a href="#hero">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+<!-- NAV -->
+<header id="nav">
+  <div class="nav-inner">
+    <div class="logo">
+      <span class="logo-bracket">[</span>
+      <span class="logo-name">ST/GORTHI</span>
+      <span class="logo-bracket">]</span>
+      <span class="logo-cursor">_</span>
+    </div>
+    <nav>
+      <a href="#about">about</a>
+      <a href="#highlights">highlights</a>
+      <a href="#projects">projects</a>
+      <a href="#experience">experience</a>
+      <a href="#demo">live tool</a>
+      <a href="#contact" class="nav-cta">hire me →</a>
+    </nav>
+    <div class="nav-status">
+      <span class="status-dot"></span>
+      <span class="status-text">OPEN TO WORK · AVAILABLE NOW</span>
+    </div>
+  </div>
 </header>
 
+<!-- HERO -->
 <section id="hero">
-  <h1>SuryaTeja Gorthi</h1>
-  <p>Generative AI Developer | Data Engineer | Cloud Developer | Cybersecurity Analyst | Full Stack Developer</p>
-  <a href="#projects" class="btn">Explore My Work ↓</a>
-</section>
-
-<section id="about" class="glass">
-  <h2>About Me</h2>
-<p>
-I am a Generative AI Engineer focused on building production-ready systems that combine data engineering, cloud automation, and responsible AI. My work centers on designing grounded AI pipelines, scalable workflows, and secure architectures that operate reliably in real-world environments.
-</p>
-</section>
-
-<section id="achievements" class="glass">
-  <h2>Achievements</h2>
-  <div class="achievements-grid">
-    <div class="achievement-card">🏆 3rd Place – Data Fusion Challenge (2025)</div>
-    <div class="achievement-card">🏆 3rd Place - By-Laws Municipalities Project – Civic Impact</div>
-    <div class="achievement-card">🏆 Dean’s List of Honour – Fall 2024</div>
-    <div class="achievement-card">🏆 President’s Honor List – Fall 2020</div>
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-tag">// SENIOR AI SYSTEMS + SECURITY SPECIALIST</div>
+      <h1>
+        <span class="h1-line1">SuryaTeja</span>
+        <span class="h1-line2">Gorthi<span class="h1-accent">.</span></span>
+      </h1>
+      <p class="hero-sub">
+        I build enterprise-grade GenAI pipelines, harden LLM architectures against adversarial threats,
+        and engineer data systems that operate at scale in regulated environments.
+      </p>
+      <div class="hero-tags">
+        <span># RAG Architect</span>
+        <span># LLM Security</span>
+        <span># Data Engineering</span>
+        <span># CTF Top-7%</span>
+        <span># GRC Tooling</span>
+      </div>
+      <div class="hero-ctas">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#demo" class="btn-secondary">↗ Live Tool Demo</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="terminal-widget">
+        <div class="terminal-header">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="terminal-title">system_profile.sh</span>
+        </div>
+        <div class="terminal-body" id="terminalBody">
+          <div class="t-line"><span class="t-prompt">$</span> <span class="t-cmd">./run_threat_scan.py --target urls.csv</span></div>
+          <div class="t-output">→ [████████████░░░░] scanning 847 URLs...</div>
+          <div class="t-output">→ 23 phishing indicators flagged · confidence &gt; 0.91</div>
+          <div class="t-line"><span class="t-prompt">$</span> <span class="t-cmd">python rag_pipeline.py --mode production</span></div>
+          <div class="t-output">→ embeddings loaded · retrieval latency: 38ms</div>
+          <div class="t-output">→ hallucination circuit: <span class="t-highlight">ARMED</span></div>
+          <div class="t-line"><span class="t-prompt">$</span> <span class="t-cmd">cat grc_summary.txt | tail -2</span></div>
+          <div class="t-output">→ CRITICAL risks: 3 · remediation roadmap: generated</div>
+          <div class="t-output">→ NIST CSF coverage: 78% · <span class="t-highlight">scroll to explore ↓</span></div>
+          <div class="t-line"><span class="t-prompt">$</span> <span class="t-cursor">█</span></div>
+        </div>
+      </div>
+    </div>
   </div>
+  <div class="hero-scroll">scroll ↓</div>
 </section>
 
-<section id="skills" class="glass">
-  <h2>Skills</h2>
-  <div class="skills-categories">
-
-    <div class="skill-category programming">
-      <h3>Programming Languages</h3>
-      <div class="skills-list">
-        <span>Python</span>
-        <span>Java</span>
-        <span>Rust</span>
-        <span>Dart</span>
-        <span>JavaScript</span>
-        <span>TypeScript</span>
-        <span>SQL</span>
-        <span>C++</span>
-        <span>C#</span>
-        <span>Ruby</span>
-      </div>
-    </div>
-
-    <div class="skill-category frontend">
-      <h3>Frontend & Mobile Development</h3>
-      <div class="skills-list">
-        <span>React</span>
-        <span>React Native</span>
-        <span>Flutter</span>
-        <span>FlutterFlow</span>
-        <span>Angular</span>
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>Bootstrap</span>
-        <span>Tailwind</span>
-      </div>
-    </div>
-
-    <div class="skill-category cloud">
-      <h3>Cloud, Automation & DevOps</h3>
-      <div class="skills-list">
-        <span>Azure</span>
-        <span>Azure OpenAI</span>
-        <span>AWS</span>
-        <span>Google Cloud</span>
-        <span>Docker</span>
-        <span>Power Automate (Cloud)</span>
-        <span>Power Automate (Desktop / RPA)</span>
-        <span>GitHub Actions</span>
-        <span>Vercel</span>
-      </div>
-    </div>
-
-    <div class="skill-category backend">
-      <h3>Backend, Data Engineering & GenAI</h3>
-      <div class="skills-list">
-        <span>FastAPI</span>
-        <span>REST APIs</span>
-        <span>LangChain</span>
-        <span>Retrieval-Augmented Generation (RAG)</span>
-        <span>LLM Prompt Engineering</span>
-        <span>Text Embeddings</span>
-        <span>ETL Pipelines</span>
-        <span>Microsoft SQL Server</span>
-        <span>Firestore</span>
-        <span>Apache Beam</span>
-      </div>
-    </div>
-
-    <div class="skill-category ai">
-      <h3>AI, LLMs & Intelligent Automation</h3>
-      <div class="skills-list">
-        <span>GPT-4o</span>
-        <span>Azure OpenAI Models</span>
-        <span>Copilot Studio</span>
-        <span>Semantic Search</span>
-        <span>AI Workflow Orchestration</span>
-        <span>Model Grounding</span>
-        <span>Hallucination Mitigation</span>
-      </div>
-    </div>
-
-    <div class="skill-category security">
-  <h3>Security, Cybersecurity & Access Control</h3>
-  <div class="skills-list">
-    <span>OAuth 2.0</span>
-    <span>JWT</span>
-    <span>IAM Roles</span>
-    <span>Data Privacy Handling</span>
-    <span>SQL Injection Prevention</span>
-    <span>XSS / CSRF Defense</span>
-    <span>Kali Linux (VM)</span>
-    <span>MITRE Caldera</span>
-    <span>Adversary Simulation</span>
-    <span>Threat Modeling</span>
-    <span>Security-Aware Prompting</span>
+<!-- METRICS BAR -->
+<div class="metrics-bar">
+  <div class="metric">
+    <span class="metric-val">2.5+</span>
+    <span class="metric-label">Years Professional Experience</span>
+  </div>
+  <div class="metric-divider">|</div>
+  <div class="metric">
+    <span class="metric-val">Top 7%</span>
+    <span class="metric-label">NCC Mastercard CTF 2026</span>
+  </div>
+  <div class="metric-divider">|</div>
+  <div class="metric">
+    <span class="metric-val">CEH</span>
+    <span class="metric-label">+ 3 Johns Hopkins Certs</span>
+  </div>
+  <div class="metric-divider">|</div>
+  <div class="metric">
+    <span class="metric-val">Masters</span>
+    <span class="metric-label">Cybersecurity · TMU '26</span>
   </div>
 </div>
 
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-inner">
+    <div class="section-label">// 001 — PROFILE</div>
+    <h2 class="section-title">Engineering at the <span class="accent">intersection</span><br>of AI, Data & Security.</h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          I specialize in designing systems where <strong>AI reliability, data integrity, and security posture are non-negotiable constraints</strong> — not afterthoughts. My experience spans enterprise RAG architecture at Manulife, petabyte-scale ETL at Ontario Power Generation, and adversarial security research at Toronto Metropolitan University.
+        </p>
+        <p>
+          My approach: choose architectures for their <em>failure-mode properties</em>, not just their benchmarks. I ask: "What breaks this at 3 AM?" and engineer the answer in before deployment.
+        </p>
+      </div>
+      <div class="about-stats">
+        <div class="stat-row">
+          <span class="stat-label">PRIMARY STACK</span>
+          <span class="stat-val">Python · LangChain · Azure · FastAPI · React · JavaScript · Java · PHP · SQL</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-label">SECURITY TOOLS</span>
+          <span class="stat-val">Splunk · MITRE ATT&amp;CK/ATLAS · Hack The Box · Digital Forensics</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-label">DATA INFRA</span>
+          <span class="stat-val">SQL Server · Apache Beam · ETL · Power BI · Power Apps</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-label">EDUCATION</span>
+          <span class="stat-val">Master of Cybersecurity · Bachelor of Software Engineering</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <div class="skill-category analytics">
-      <h3>Analytics, Power Platform & Tools</h3>
-      <div class="skills-list">
-        <span>Power BI</span>
-        <span>Power Apps</span>
-        <span>Microsoft Power Platform</span>
-        <span>Tableau</span>
-        <span>Git</span>
+<!-- TECHNICAL HIGHLIGHTS -->
+<section id="highlights">
+  <div class="section-inner">
+    <div class="section-label">// 002 — COMPETITIVE PROOF</div>
+    <h2 class="section-title">Technical <span class="accent">Highlights</span></h2>
+    <p class="section-sub">Quantified achievements that demonstrate specialist-level capability under pressure.</p>
+    <div class="highlights-grid">
+      <div class="highlight-card ctf-card">
+        <div class="hl-badge">COMPETITIVE SECURITY</div>
+        <div class="hl-icon">🏴</div>
+        <h3>7th Place — NCC Mastercard CTF</h3>
+        <p class="hl-context"><em>Situation:</em> National-level Capture The Flag competition with 100+ teams across Canada.</p>
+        <p class="hl-detail">Solved challenges spanning web exploitation, binary reversing, cryptographic attacks, and forensic analysis — placing in the <strong>top 7%</strong> of all participants nationally. Also participated in <strong>TryHackMe: 2026 An AI Odyssey</strong> (May 2026) — a CTF focused on AI security challenges.</p>
+        <div class="hl-value">
+          <span class="hl-value-label">EMPLOYER VALUE ADD</span>
+          <p>Demonstrates real-world offensive security reasoning under time constraints — the exact mindset required for threat modeling and secure-by-design engineering.</p>
+        </div>
+        <div class="hl-tags"><span>Web Exploitation</span><span>Cryptography</span><span>Binary Analysis</span><span>Forensics</span><span>TryHackMe</span><span>AI Security CTF</span></div>
+      </div>
+      <div class="highlight-card research-card">
+        <div class="hl-badge">GRADUATE SPECIALIZATION</div>
+        <div class="hl-icon">🔬</div>
+        <h3>Security Architecture — Master of Cybersecurity · TMU</h3>
+        <p class="hl-context"><em>Situation:</em> Master of Cybersecurity (Course-Based) at Toronto Metropolitan University — currently completing Spring/Summer 2026 semester.</p>
+        <p class="hl-detail">Achieved <strong>A+ in Security Architecture</strong> and <strong>A in both Cyber Frameworks, Governance &amp; Compliance and Security Operations &amp; Business Continuity</strong>. Completed Cybersecurity Risk Management (B), Fundamentals of Security Technology (A-), Privacy Law &amp; Ethics (B), and Fundamentals of Information Assurance (B+). Currently in progress: Simulations in the Cyber Range and Applied Cryptography.</p>
+        <div class="hl-value">
+          <span class="hl-value-label">EMPLOYER VALUE ADD</span>
+          <p>Bridges the gap between technical offensive skills and defensive governance. Grades prove it — not just claimed knowledge. A+ in Security Architecture, A in GRC, currently in live Cyber Range simulations.</p>
+        </div>
+        <div class="hl-tags"><span>Security Architecture A+</span><span>GRC A</span><span>Sec Ops A</span><span>Cyber Range ⟳</span><span>Applied Cryptography ⟳</span><span>Privacy Law</span><span>Risk Management</span></div>
+      </div>
+      <div class="highlight-card enterprise-card">
+        <div class="hl-badge">ENTERPRISE AI DEPLOYMENT</div>
+        <div class="hl-icon">⚡</div>
+        <h3>Production RAG System — Manulife</h3>
+        <p class="hl-context"><em>Situation:</em> GenAI initiative to automate compliance and knowledge workflows for a global insurer.</p>
+        <p class="hl-detail">Architected end-to-end Retrieval-Augmented Generation (RAG) pipelines using Azure OpenAI and LangChain to ground GPT-4o on enterprise documents. Optimized metadata strategies to reduce hallucination rates by design.</p>
+        <div class="hl-value">
+          <span class="hl-value-label">EMPLOYER VALUE ADD</span>
+          <p>Proven ability to deploy responsible AI at enterprise scale. Understands the infrastructure and compliance constraints that make GenAI production-ready.</p>
+        </div>
+        <div class="hl-tags"><span>Azure OpenAI</span><span>RAG</span><span>LangChain</span><span>Enterprise AI</span></div>
+      </div>
+      <div class="highlight-card data-card">
+        <div class="hl-badge">REGULATED ENVIRONMENT</div>
+        <div class="hl-icon">⚛️</div>
+        <h3>Nuclear-Grade Data Engineering — OPG</h3>
+        <p class="hl-context"><em>Situation:</em> Operational and performance reporting for Ontario Power Generation's nuclear fleet.</p>
+        <p class="hl-detail">Built and maintained Extract, Transform, Load (ETL) pipelines processing <strong>millions of records</strong> with zero-tolerance for data quality failures in a nuclear-regulated environment.</p>
+        <div class="hl-value">
+          <span class="hl-value-label">EMPLOYER VALUE ADD</span>
+          <p>Brings extreme operational discipline and failure-awareness to data systems. Experienced in maintaining high-integrity pipelines in high-stakes environments.</p>
+        </div>
+        <div class="hl-tags"><span>ETL Pipelines</span><span>SQL Server</span><span>Power BI</span><span>Regulated Data</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-inner">
+    <div class="section-label">// 003 — PROJECTS</div>
+    <h2 class="section-title">Engineering <span class="accent">Complexity</span><br>&amp; Measurable Results</h2>
+    <p class="section-sub">Each project description follows the STAR format: <em>Situation · Task · Action · Result</em></p>
+    <div class="projects-list">
+
+      <!-- 01 PHISHING DETECTOR -->
+      <div class="project-item featured">
+        <div class="proj-meta">
+          <span class="proj-num">01</span>
+          <span class="proj-badge">SECURITY + ML</span>
+        </div>
+        <div class="proj-content">
+          <h3>PhishGuard AI — Adversarial Phishing URL Detector</h3>
+          <div class="star-grid">
+            <div class="star-block">
+              <span class="star-label">S / SITUATION</span>
+              <p>Phishing attacks bypassed traditional signature-based filters because adversaries continuously rotate domains and obfuscate URL structures — rendering static blocklists obsolete within hours.</p>
+            </div>
+            <div class="star-block">
+              <span class="star-label">T / TASK</span>
+              <p>Design a detection system that generalizes to novel phishing patterns without retraining, using behavioral and structural URL features rather than blacklist lookups.</p>
+            </div>
+            <div class="star-block full-width">
+              <span class="star-label">A / ENGINEERING ARCHITECTURE</span>
+              <p>Built a <strong>4-model ensemble</strong> — Gradient Boosting, Random Forest, Neural Net (MLP), and SVM — running simultaneously with consensus scoring. Engineered 30+ lexical and structural features — URL entropy, subdomain depth, Top-Level Domain (TLD) rarity, obfuscation character presence — making the model robust to adversarial perturbations. Added a confidence-threshold guardrail to route uncertain predictions to human review rather than defaulting to binary classification. Deployed as a Flask REST API with a live web dashboard showing multi-model comparison charts and confidence intervals.</p>
+            </div>
+            <div class="star-block">
+              <span class="star-label">R / RESULTS</span>
+              <p><strong>94% detection accuracy</strong> on held-out test set. False negative rate kept below 3% through asymmetric cost tuning. Live at <a href="https://phishing-detector-9xr8.onrender.com" target="_blank" rel="noopener" style="color: var(--accent);">phishing-detector-9xr8.onrender.com</a> — paste any URL and see 4 models analyze it in real time.</p>
+            </div>
+          </div>
+          <div class="proj-tech"><span>Python</span><span>scikit-learn</span><span>Flask</span><span>4-Model Ensemble</span><span>Feature Engineering</span><span>Render</span></div>
+          <div class="proj-links">
+            <a href="https://phishing-detector-9xr8.onrender.com" target="_blank" rel="noopener">Live Demo →</a>
+            <a href="https://github.com/SuryaTeja2002-design/phishing_detector" target="_blank" rel="noopener" style="margin-left: 20px;">GitHub →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 02 RAG PIPELINE -->
+      <div class="project-item featured">
+        <div class="proj-meta">
+          <span class="proj-num">02</span>
+          <span class="proj-badge">GEN AI + RAG</span>
+        </div>
+        <div class="proj-content">
+          <h3>Enterprise RAG Pipeline with LangChain + Azure OpenAI</h3>
+          <div class="star-grid">
+            <div class="star-block">
+              <span class="star-label">S / SITUATION</span>
+              <p>Enterprise knowledge systems at Manulife contained 100,000+ unstructured documents. Large Language Model (LLM) responses without grounding produced confident but factually incorrect answers — an unacceptable risk in financial services.</p>
+            </div>
+            <div class="star-block">
+              <span class="star-label">T / TASK</span>
+              <p>Architect a production-grade Retrieval-Augmented Generation (RAG) system that grounds GPT-4o responses exclusively on verified enterprise data, with measurable hallucination reduction and audit traceability.</p>
+            </div>
+            <div class="star-block full-width">
+              <span class="star-label">A / ENGINEERING ARCHITECTURE</span>
+              <p>Chose <strong>chunked embedding + vector retrieval</strong> over fine-tuning for two architectural reasons: (1) fine-tuning encodes knowledge statically and cannot reflect document updates without costly retraining; (2) RAG preserves source provenance, enabling citation-level auditability required by financial compliance teams. Implemented <strong>semantic chunking</strong> rather than fixed-size chunking to preserve contextual coherence across document boundaries. Built a <strong>LangChain orchestration layer</strong> with a hallucination circuit-breaker — if retrieval similarity fell below threshold, the system surfaced uncertainty rather than fabricating an answer.</p>
+            </div>
+            <div class="star-block">
+              <span class="star-label">R / RESULTS</span>
+              <p>Reduced hallucinated responses by design through grounding constraints. Automated 3 manual reporting workflows. System consumed by compliance and analytics teams across the enterprise.</p>
+            </div>
+          </div>
+          <div class="proj-tech"><span>LangChain</span><span>Azure OpenAI</span><span>GPT-4o</span><span>FAISS</span><span>LangGraph</span><span>Embeddings</span><span>Python</span></div>
+          <div class="proj-links">
+            <a href="https://github.com/SuryaTeja2002-design/azure-etl-retrieval" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 03 GRC RISK ENGINE -->
+      <div class="project-item featured">
+        <div class="proj-meta">
+          <span class="proj-num">03</span>
+          <span class="proj-badge">GRC + AI + SECURITY</span>
+        </div>
+        <div class="proj-content">
+          <h3>GRC Risk Engine — AI-Powered Governance, Risk &amp; Compliance Tool</h3>
+          <div class="star-grid">
+            <div class="star-block">
+              <span class="star-label">S / SITUATION</span>
+              <p>Enterprise Governance, Risk &amp; Compliance (GRC) tooling costs thousands of dollars per seat, requires backend infrastructure, and takes weeks to configure. Security teams in smaller organizations have no practical alternative to spreadsheets.</p>
+            </div>
+            <div class="star-block">
+              <span class="star-label">T / TASK</span>
+              <p>Build a fully functional, AI-augmented GRC risk assessment platform that runs offline, requires zero infrastructure, and produces professional-grade deliverables — all in a single file.</p>
+            </div>
+            <div class="star-block full-width">
+              <span class="star-label">A / ENGINEERING ARCHITECTURE</span>
+              <p>Deliberately chose <strong>vanilla JavaScript with zero frameworks</strong> to demonstrate mastery of fundamentals — eliminates dependency risk and allows the tool to run entirely client-side with no server, no login, and no data leaving the browser. Implemented a <strong>live risk scoring engine</strong> using the industry-standard Likelihood × Impact matrix. Built an <strong>AI risk suggestion layer</strong> that detects company type and auto-populates relevant risk categories. Integrated four major compliance frameworks — <strong>NIST CSF 2.0, ISO 27001, SOC 2 Type II, and CIS Controls</strong> — with live coverage bars. Implemented export pipelines to Excel (.xlsx via SheetJS), standalone HTML reports, and browser-native PDF.</p>
+            </div>
+            <div class="star-block">
+              <span class="star-label">R / RESULTS</span>
+              <p>Production-quality GRC tool in a <strong>single HTML file</strong> — live at <a href="https://suryateja2002-design.github.io/grc-risk-engine/" target="_blank" rel="noopener" style="color: var(--accent);">GitHub Pages</a>. Interactive risk heatmap, remediation roadmap, multi-framework compliance tracking, and professional report exports — all running offline.</p>
+            </div>
+          </div>
+          <div class="proj-tech"><span>Vanilla JavaScript</span><span>NIST CSF 2.0</span><span>ISO 27001</span><span>SOC 2</span><span>CIS Controls</span><span>Chart.js</span><span>SheetJS</span></div>
+          <div class="proj-links">
+            <a href="https://suryateja2002-design.github.io/grc-risk-engine/" target="_blank" rel="noopener">Live Tool →</a>
+            <a href="https://github.com/SuryaTeja2002-design/grc-risk-engine" target="_blank" rel="noopener" style="margin-left: 20px;">GitHub →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 04 AI CODE ANALYZER -->
+      <div class="project-item">
+        <div class="proj-meta">
+          <span class="proj-num">04</span>
+          <span class="proj-badge">AI + DEVSECOPS</span>
+        </div>
+        <div class="proj-content">
+          <h3>AI Code Security Analyzer Dashboard</h3>
+          <div class="star-grid">
+            <div class="star-block">
+              <span class="star-label">S / SITUATION</span>
+              <p>Manual code review for security vulnerabilities is slow, inconsistent, and scales poorly with codebase growth. Teams needed automated risk detection across Python, Ruby, and JavaScript — including entire GitHub repositories.</p>
+            </div>
+            <div class="star-block full-width">
+              <span class="star-label">A / ENGINEERING ARCHITECTURE</span>
+              <p>Built a <strong>Ruby on Sinatra</strong> web backend that accepts file uploads (.rb, .py, .js) or GitHub repository URLs — cloning the repo and scanning all files automatically. Integrated <strong>GPT-4</strong> via the OpenAI API with structured prompting (JSON-schema output enforcement) to produce machine-parseable vulnerability reports. Used <strong>Chart.js</strong> on the frontend to visualize severity distributions. Chose prompt-based analysis over Abstract Syntax Tree (AST) parsing for language-agnostic coverage.</p>
+            </div>
+            <div class="star-block">
+              <span class="star-label">R / RESULTS</span>
+              <p>Multi-language vulnerability detection pipeline with real-time dashboard, JSON export, and GitHub repo scanning. Supports Common Weakness Enumeration (CWE) category mapping and severity classification.</p>
+            </div>
+          </div>
+          <div class="proj-tech"><span>Ruby</span><span>Sinatra</span><span>GPT-4</span><span>OpenAI API</span><span>HTML</span><span>Chart.js</span><span>Structured Prompting</span></div>
+          <div class="proj-links">
+            <a href="https://github.com/SuryaTeja2002-design/AI_Quality_Dashboard" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-inner">
+    <div class="section-label">// 004 — EXPERIENCE</div>
+    <h2 class="section-title">Professional <span class="accent">Track Record</span></h2>
+    <div class="timeline-v2">
+
+      <div class="tl-item">
+        <div class="tl-left">
+          <span class="tl-date">Jul 2025 – Jan 2026</span>
+          <span class="tl-type">Contract · Ended Jan 2, 2026</span>
+        </div>
+        <div class="tl-dot"></div>
+        <div class="tl-right">
+          <h3>AI &amp; Automation Developer</h3>
+          <span class="tl-company">Manulife</span>
+          <ul>
+            <li>Architected and deployed a Power Automate solution integrating the Siteimprove web accessibility API with Jira — <strong>fully eliminating manual remediation tracking across 6 enterprise websites</strong> with zero human intervention; delivered as both Cloud Flow and Desktop Robotic Process Automation (RPA).</li>
+            <li>Built a Power BI dashboard that progressed from prototype to <strong>full production deployment</strong>, adopted by operational teams and senior directors across the organization and an affiliated US entity.</li>
+            <li>Evaluated Copilot Studio agentic workflows with GPT-4 for compliance automation — <strong>identified and documented critical blockers</strong> including hallucination rates and credential security risks, leading the team to pivot to a more reliable approach.</li>
+            <li>Contributed to a GenAI Proof of Concept leveraging Large Language Models (LLMs) and Azure infrastructure to accelerate a Business Intelligence (BI) migration workflow, demonstrating feasibility at enterprise scale.</li>
+          </ul>
+          <div class="tl-tags"><span>Power Automate</span><span>Siteimprove API</span><span>Jira</span><span>Power BI</span><span>Copilot Studio</span><span>GPT-4</span><span>Azure</span><span>RPA</span></div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-left">
+          <span class="tl-date">Jun 2025 – Jan 2026</span>
+          <span class="tl-type">Contract · Ended Jan 2, 2026</span>
+        </div>
+        <div class="tl-dot"></div>
+        <div class="tl-right">
+          <h3>AI Engineer — RAG &amp; Agentic Systems</h3>
+          <span class="tl-company">Tata Consultancy Services</span>
+          <ul>
+            <li>Built an internal RAG pipeline on <strong>Azure OpenAI (GPT + text embeddings) with FAISS indexing</strong> — enabling code cleaning, code summarization, and document summarization at enterprise scale.</li>
+            <li>Developed an <strong>agentic AI system using LangGraph and Gemini API</strong> capable of multi-step autonomous reasoning — demonstrating end-to-end agentic workflow design with real tool orchestration.</li>
+            <li>Engineered data ingestion, chunking, and embedding pipelines handling unstructured enterprise data; applied semantic chunking over fixed-size chunking to preserve contextual coherence across document boundaries.</li>
+            <li>Applied security and governance principles to AI deployments — ensuring outputs were reliable, auditable, and safe for regulated financial environments.</li>
+          </ul>
+          <div class="tl-tags"><span>Azure OpenAI</span><span>FAISS</span><span>LangGraph</span><span>Gemini API</span><span>RAG</span><span>LangChain</span><span>Agentic AI</span><span>Embeddings</span></div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-left">
+          <span class="tl-date">May 2023 – May 2024</span>
+          <span class="tl-type">Internship · Pickering, ON</span>
+        </div>
+        <div class="tl-dot"></div>
+        <div class="tl-right">
+          <h3>Data Engineer Intern</h3>
+          <span class="tl-company">Ontario Power Generation</span>
+          <ul>
+            <li>Built Extract, Transform, Load (ETL) pipelines processing millions of operational records in a nuclear-regulated environment — zero data quality failures against strict Service Level Agreements.</li>
+            <li>Designed and maintained multiple enterprise Power BI dashboards — including a <strong>PRL Dashboard</strong> tracking 434 work orders across completion status categories, and a <strong>FAGM/SPAGM 90-Day Lookahead Dashboard</strong> for radiation monitoring equipment scheduling across nuclear units.</li>
+            <li>Implemented optimized Data Analysis Expressions (DAX) measures, scheduled refresh pipelines, and work-week-based visualizations enabling operations teams to forecast maintenance load weeks in advance.</li>
+            <li>Developed a <strong>Backlog Readiness Execution Review Power App</strong> — canvas application allowing engineering teams to filter, search, and review work orders by equipment, crew, criticality, and readiness state; received formal recognition from senior leadership.</li>
+            <li>Prototyped an <strong>HR personnel Power App</strong> enabling staff to look up employee records by site location, view profiles, and append updated information.</li>
+            <li>Operated within data governance frameworks for regulated critical infrastructure, building security-conscious data handling practices across nuclear operational systems.</li>
+          </ul>
+          <div class="tl-tags"><span>SQL Server</span><span>Power BI</span><span>Power Apps</span><span>DAX</span><span>ETL</span><span>Canvas Apps</span><span>Nuclear Operations</span><span>Data Engineering</span></div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-left">
+          <span class="tl-date">Nov 2022 – Apr 2023</span>
+          <span class="tl-type">Apprenticeship · Oshawa, ON</span>
+        </div>
+        <div class="tl-dot"></div>
+        <div class="tl-right">
+          <h3>Software Application Developer</h3>
+          <span class="tl-company">Ontario Tech University — Brilliant Catalyst</span>
+          <ul>
+            <li>Built and deployed a <strong>production mobile application</strong> using Flutter and Firebase — from architecture to launch — with secure authentication, real-time data sync, and a UI designed for actual university users.</li>
+            <li>Delivered the full Minimum Viable Product (MVP) on schedule through cross-functional collaboration, navigating competing priorities across teams without slipping the deadline.</li>
+          </ul>
+          <div class="tl-tags"><span>Flutter</span><span>Firebase</span><span>Dart</span><span>Agile</span><span>Mobile Development</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- LIVE DEMO -->
+<section id="demo">
+  <div class="section-inner" style="max-width: 1200px;">
+    <div class="section-label">// 005 — LIVE DEMOS</div>
+    <h2 class="section-title">Click it. <span class="accent">It works.</span></h2>
+    <p class="section-sub">Select a project — each one is live, interactive, and verifiable. No pre-canned answers.</p>
+
+    <div style="display: flex; gap: 0; flex-wrap: wrap; margin-bottom: 0;">
+      <button onclick="switchDemo('grc')" id="tab-grc"
+        style="font-family: var(--mono); font-size: 0.78rem; padding: 12px 22px; border-radius: 4px 4px 0 0; border: 1px solid rgba(0,240,170,0.35); border-bottom: 2px solid var(--bg3); background: rgba(0,240,170,0.1); color: var(--accent); cursor: pointer; letter-spacing: 0.04em; margin-right: 4px;">
+        🛡️ GRC Risk Engine
+      </button>
+      <button onclick="switchDemo('weather')" id="tab-weather"
+        style="font-family: var(--mono); font-size: 0.78rem; padding: 12px 22px; border-radius: 4px 4px 0 0; border: 1px solid rgba(0,240,170,0.12); border-bottom: 1px solid rgba(0,240,170,0.35); background: transparent; color: var(--text-dim); cursor: pointer; letter-spacing: 0.04em; margin-right: 4px;">
+        🌦️ Weather Dashboard
+      </button>
+      <button onclick="switchDemo('phishing')" id="tab-phishing"
+        style="font-family: var(--mono); font-size: 0.78rem; padding: 12px 22px; border-radius: 4px 4px 0 0; border: 1px solid rgba(0,240,170,0.12); border-bottom: 1px solid rgba(0,240,170,0.35); background: transparent; color: var(--text-dim); cursor: pointer; letter-spacing: 0.04em;">
+        🔍 PhishGuard AI · LIVE
+      </button>
+    </div>
+
+    <div style="border: 1px solid rgba(0,240,170,0.35); border-radius: 0 4px 4px 4px; background: rgba(13,17,23,0.8); overflow: hidden;">
+
+      <!-- GRC PANEL -->
+      <div id="panel-grc">
+        <div style="padding: 20px 28px; background: rgba(0,0,0,0.4); border-bottom: 1px solid rgba(0,240,170,0.12); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+          <div>
+            <div style="font-family: var(--mono); font-size: 0.65rem; color: var(--accent); letter-spacing: 0.1em; margin-bottom: 4px;">GRC RISK ENGINE · LIVE · NO API KEY NEEDED</div>
+            <div style="font-family: var(--sans); font-weight: 700; font-size: 1rem; color: var(--text-bright);">AI-Powered Governance, Risk &amp; Compliance Platform</div>
+          </div>
+          <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+            <span style="font-family: var(--mono); font-size: 0.62rem; background: rgba(0,240,170,0.08); border: 1px solid rgba(0,240,170,0.3); color: var(--accent); padding: 3px 10px; border-radius: 2px;">RUNS OFFLINE</span>
+            <span style="font-family: var(--mono); font-size: 0.62rem; background: rgba(0,240,170,0.08); border: 1px solid rgba(0,240,170,0.3); color: var(--accent); padding: 3px 10px; border-radius: 2px;">NIST CSF 2.0 · ISO 27001 · SOC 2</span>
+          </div>
+        </div>
+        <div style="padding: 24px 28px; display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; border-bottom: 1px solid rgba(0,240,170,0.12);">
+          <div style="font-family: var(--mono); font-size: 0.75rem; color: var(--text-dim);"><span style="color: var(--accent); display: block; margin-bottom: 6px;">01 / Add a Risk</span>Enter your company type — AI suggests the most relevant risks for your industry instantly.</div>
+          <div style="font-family: var(--mono); font-size: 0.75rem; color: var(--text-dim);"><span style="color: var(--accent); display: block; margin-bottom: 6px;">02 / View the Heatmap</span>Risks plotted on a Likelihood × Impact matrix — same methodology used by certified GRC auditors.</div>
+          <div style="font-family: var(--mono); font-size: 0.75rem; color: var(--text-dim);"><span style="color: var(--accent); display: block; margin-bottom: 6px;">03 / Export a Report</span>Professional compliance report in Excel, PDF, or HTML — zero backend involved.</div>
+        </div>
+        <div style="padding: 32px 28px; text-align: center;">
+          <a href="https://suryateja2002-design.github.io/grc-risk-engine/" target="_blank" rel="noopener"
+             style="display: inline-flex; align-items: center; gap: 10px; background: var(--accent); color: #000; font-family: var(--mono); font-weight: 700; font-size: 0.88rem; padding: 13px 36px; border-radius: 4px; text-decoration: none; letter-spacing: 0.03em;">
+            ↗ Open GRC Risk Engine
+          </a>
+          <p style="font-family: var(--mono); font-size: 0.68rem; color: var(--text-dim); margin-top: 12px;">Opens in a new tab · Single HTML file · Works without internet after load</p>
+        </div>
+        <div style="padding: 14px 28px; background: rgba(0,0,0,0.3); border-top: 1px solid rgba(0,240,170,0.12); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+          <span style="font-family: var(--mono); font-size: 0.7rem; color: var(--text-dim);"><span style="color: var(--accent);">Proves: </span>Security domain knowledge · GRC frameworks · Zero-dependency engineering</span>
+          <a href="https://github.com/SuryaTeja2002-design/grc-risk-engine" target="_blank" rel="noopener" style="font-family: var(--mono); font-size: 0.7rem; color: var(--accent); text-decoration: none;">View Source on GitHub →</a>
+        </div>
+      </div>
+
+      <!-- WEATHER PANEL -->
+      <div id="panel-weather" style="display: none;">
+        <div style="padding: 20px 28px; background: rgba(0,0,0,0.4); border-bottom: 1px solid rgba(0,240,170,0.12);">
+          <div style="font-family: var(--mono); font-size: 0.65rem; color: var(--accent); letter-spacing: 0.1em; margin-bottom: 4px;">US WEATHER DASHBOARD · LIVE DATA · NETLIFY</div>
+          <div style="font-family: var(--sans); font-weight: 700; font-size: 1rem; color: var(--text-bright);">Real-Time Weather Dashboard — National Weather Service API</div>
+        </div>
+        <div style="padding: 24px 28px; display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; border-bottom: 1px solid rgba(0,240,170,0.12);">
+          <div style="font-family: var(--mono); font-size: 0.75rem; color: var(--text-dim);"><span style="color: var(--accent); display: block; margin-bottom: 6px;">01 / Live Conditions</span>Real weather data pulled directly from the US National Weather Service API — no third-party wrapper.</div>
+          <div style="font-family: var(--mono); font-size: 0.75rem; color: var(--text-dim);"><span style="color: var(--accent); display: block; margin-bottom: 6px;">02 / 7-Day Forecast</span>Forward-looking forecast per city — demonstrates data pipeline design and API consumption at scale.</div>
+          <div style="font-family: var(--mono); font-size: 0.75rem; color: var(--text-dim);"><span style="color: var(--accent); display: block; margin-bottom: 6px;">03 / Auto-Refresh</span>Dashboard updates every 10 minutes — same scheduled refresh pattern used in the OPG Power BI dashboards.</div>
+        </div>
+        <div style="padding: 32px 28px; text-align: center;">
+          <a href="https://bright-lollipop-42726f.netlify.app" target="_blank" rel="noopener"
+             style="display: inline-flex; align-items: center; gap: 10px; background: var(--accent); color: #000; font-family: var(--mono); font-weight: 700; font-size: 0.88rem; padding: 13px 36px; border-radius: 4px; text-decoration: none; letter-spacing: 0.03em;">
+            ↗ Open Weather Dashboard
+          </a>
+          <p style="font-family: var(--mono); font-size: 0.68rem; color: var(--text-dim); margin-top: 12px;">Opens in a new tab · Live data · Hosted on Netlify</p>
+        </div>
+        <div style="padding: 14px 28px; background: rgba(0,0,0,0.3); border-top: 1px solid rgba(0,240,170,0.12); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+          <span style="font-family: var(--mono); font-size: 0.7rem; color: var(--text-dim);"><span style="color: var(--accent);">Proves: </span>API integration · Real-time data pipelines · Frontend data visualization · BI dashboard design</span>
+          <a href="https://github.com/SuryaTeja2002-design/weather_app" target="_blank" rel="noopener" style="font-family: var(--mono); font-size: 0.7rem; color: var(--accent); text-decoration: none;">View Source on GitHub →</a>
+        </div>
+      </div>
+
+      <!-- PHISHING PANEL -->
+      <div id="panel-phishing" style="display: none;">
+        <div style="padding: 20px 28px; background: rgba(0,0,0,0.4); border-bottom: 1px solid rgba(0,240,170,0.12);">
+          <div style="font-family: var(--mono); font-size: 0.65rem; color: var(--accent); letter-spacing: 0.1em; margin-bottom: 4px;">SECURITY + ML · 4 MODELS · LIVE ON RENDER</div>
+          <div style="font-family: var(--sans); font-weight: 700; font-size: 1rem; color: var(--text-bright);">PhishGuard AI — Adversarial Phishing URL Detector · 94% Accuracy</div>
+        </div>
+        <div style="padding: 24px 28px; display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; border-bottom: 1px solid rgba(0,240,170,0.12);">
+          <div style="font-family: var(--mono); font-size: 0.75rem; color: var(--text-dim);"><span style="color: var(--accent); display: block; margin-bottom: 6px;">4-Model Ensemble</span>Gradient Boosting · Neural Net · Random Forest · SVM — all running simultaneously, results compared in real time.</div>
+          <div style="font-family: var(--mono); font-size: 0.75rem; color: var(--text-dim);"><span style="color: var(--accent); display: block; margin-bottom: 6px;">Live Cyber Analysis</span>Paste any URL — get phishing probability, model agreement score, confidence level, and security flags instantly.</div>
+          <div style="font-family: var(--mono); font-size: 0.75rem; color: var(--text-dim);"><span style="color: var(--accent); display: block; margin-bottom: 6px;">Try It Now</span>Test with suspicious URLs like <em>paypal-login.xyz</em> or <em>ms-credential-reset</em> vs legitimate ones like <em>github.com</em>.</div>
+        </div>
+        <div style="padding: 32px 28px; text-align: center;">
+          <a href="https://phishing-detector-9xr8.onrender.com" target="_blank" rel="noopener"
+             style="display: inline-flex; align-items: center; gap: 10px; background: var(--accent); color: #000; font-family: var(--mono); font-weight: 700; font-size: 0.88rem; padding: 13px 36px; border-radius: 4px; text-decoration: none; letter-spacing: 0.03em;">
+            ↗ Open PhishGuard AI — Live
+          </a>
+          <p style="font-family: var(--mono); font-size: 0.68rem; color: var(--text-dim); margin-top: 12px;">Hosted on Render · May take 30–60s to wake on first load (free tier) · Fully live after that</p>
+        </div>
+        <div style="padding: 14px 28px; background: rgba(0,0,0,0.3); border-top: 1px solid rgba(0,240,170,0.12); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+          <span style="font-family: var(--mono); font-size: 0.7rem; color: var(--text-dim);"><span style="color: var(--accent);">Proves: </span>ML system design · Multi-model ensemble · Security feature engineering · Production deployment</span>
+          <a href="https://github.com/SuryaTeja2002-design/phishing_detector" target="_blank" rel="noopener" style="font-family: var(--mono); font-size: 0.7rem; color: var(--accent); text-decoration: none;">View Source on GitHub →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS & HONOURS -->
+<section id="certs" style="background: var(--bg2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+  <div class="section-inner">
+    <div class="section-label">// 005 — CREDENTIALS &amp; HONOURS</div>
+    <h2 class="section-title">Verified <span class="accent">Credentials</span></h2>
+    <div class="about-stats" style="max-width: 900px;">
+      <div class="stat-row">
+        <span class="stat-label">CERTIFICATIONS</span>
+        <span class="stat-val">Securing AI &amp; Advanced Topics · Advanced Malware &amp; Network Anomaly Detection · Introduction to AI for Cybersecurity · Certified Ethical Hacker (CEH) Specialization · Google Data Analytics Professional</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-label">ACADEMIC HONOURS</span>
+        <span class="stat-val">President's List · Dean's List · Honour Roll · Ontario Tech University</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-label">COMPETITIVE</span>
+        <span class="stat-val">7th Place — Mastercard Cybersecurity CTF Challenge 2026 · TryHackMe: 2026 An AI Odyssey CTF</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-label">EDUCATION</span>
+        <span class="stat-val">Master of Cybersecurity (Course-Based) · TMU · 2025–2026 &nbsp;|&nbsp; B.Eng Software Engineering (Honours) · Ontario Tech · 2020–2025</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-inner">
+    <div class="section-label">// 006 — TECHNICAL STACK</div>
+    <h2 class="section-title">Stack <span class="accent">&amp;</span> Tooling</h2>
+    <div class="skills-matrix">
+      <div class="skill-group">
+        <h4>GenAI &amp; LLMs</h4>
+        <div class="skill-items">
+          <span>LangChain</span><span>LangGraph</span><span>Azure OpenAI</span><span>GPT-4o</span><span>Gemini API</span><span>FAISS</span><span>RAG Pipelines</span><span>Agentic AI</span><span>Embeddings</span><span>Prompt Engineering</span><span>Copilot Studio Agents</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4>Security &amp; GRC</h4>
+        <div class="skill-items">
+          <span>MITRE ATT&amp;CK / ATLAS</span><span>NIST CSF 2.0</span><span>ISO 27001</span><span>SOC 2</span><span>Splunk</span><span>Kali Linux</span><span>Threat Modeling</span><span>OAuth 2.0</span><span>JWT</span><span>IAM</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4>Data &amp; Analytics</h4>
+        <div class="skill-items">
+          <span>ETL Pipelines</span><span>Apache Beam</span><span>SQL Server</span><span>PostgreSQL</span><span>NoSQL</span><span>Power BI</span><span>Power Apps</span><span>DAX</span><span>Tableau</span><span>Canvas Apps</span><span>Firestore</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4>Frameworks &amp; Platforms</h4>
+        <div class="skill-items">
+          <span>React</span><span>Node.js</span><span>FastAPI</span><span>Flask</span><span>Sinatra</span><span>Spring Boot</span><span>.NET</span><span>Flutter</span><span>Firebase</span><span>Bootstrap</span><span>Expo</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4>Cloud &amp; Infra</h4>
+        <div class="skill-items">
+          <span>Azure</span><span>AWS</span><span>GCP</span><span>Docker</span><span>Kubernetes</span><span>Kafka</span><span>Terraform</span><span>GitHub Actions</span><span>Power Automate</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4>Languages</h4>
+        <div class="skill-items">
+          <span>Python</span><span>Java</span><span>JavaScript</span><span>TypeScript</span><span>PHP</span><span>SQL</span><span>Rust</span><span>C++</span><span>C#</span><span>Ruby</span><span>Dart</span><span>HTML</span><span>CSS</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4>Testing &amp; DevOps</h4>
+        <div class="skill-items">
+          <span>JUnit</span><span>Pytest</span><span>Postman</span><span>Git</span><span>GitHub</span><span>GitLab</span><span>Maven</span><span>Git Bash</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-inner contact-inner">
+    <div class="section-label">// 007 — LET'S TALK</div>
+    <h2 class="section-title">Open to <span class="accent">high-impact</span> roles<br>in AI, Data &amp; Security.</h2>
+    <p class="section-sub">Currently available and actively seeking Senior Engineer, AI Architect, or Security + Machine Learning hybrid roles. Toronto / Remote — open to both.</p>
+    <div class="contact-grid">
+      <a href="https://www.linkedin.com/in/suryatejagorthi/" target="_blank" rel="noopener" class="contact-card">
+        <i class="fa-brands fa-linkedin"></i>
+        <span>LinkedIn</span>
+      </a>
+      <a href="https://github.com/SuryaTeja2002-design" target="_blank" rel="noopener" class="contact-card">
+        <i class="fa-brands fa-github"></i>
         <span>GitHub</span>
-        <span>Visual Studio</span>
-        <span>IntelliJ IDEA</span>
-        <span>Android Studio</span>
-        <span>Xcode</span>
-      </div>
+      </a>
+      <a href="mailto:2002suryateja@gmail.com" class="contact-card">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Email</span>
+      </a>
+      <a href="resume.html" target="_blank" class="contact-card resume-card">
+        <i class="fa-solid fa-file-lines"></i>
+        <span>Resume</span>
+      </a>
     </div>
-
   </div>
 </section>
-
-
-<section id="experience" class="glass">
-  <h2>Experience</h2>
-  <div class="timeline">
-
-<!-- RIGHT (NEW - TOP) -->
-<div class="timeline-container right">
-  <div class="experience-card">
-    <h3>Tata Consultancy Services</h3>
-    <p class="role">
-      Generative AI Developer <span class="date">(Jun 2025 – Jan 2026)</span>
-    </p>
-    <p class="client">Client: Manulife</p>
-
-    <ul class="experience-bullets">
-      <li>Designed and delivered enterprise Generative AI solutions to automate reporting, compliance, and knowledge workflows.</li>
-      <li>Built Retrieval-Augmented Generation (RAG) pipelines using embeddings to ground LLM responses on structured and unstructured enterprise data.</li>
-      <li>Consumed and integrated REST APIs to extract metadata, trigger AI workflows, and orchestrate downstream processes.</li>
-      <li>Used GPT-4o with structured prompting to generate Power BI semantic models, DAX measures, and reporting artifacts.</li>
-      <li>Implemented embedding-based similarity search to enable contextual retrieval and reduce hallucinations.</li>
-      <li>Automated end-to-end workflows using Power Automate Cloud Flows and Desktop (RPA) flows.</li>
-      <li>Built Python and LangChain pipelines to manage prompt orchestration, data ingestion, and AI workflow execution.</li>
-    </ul>
-
-    <div class="tech-tags">
-      <span>Azure OpenAI</span>
-      <span>GPT-4o</span>
-      <span>RAG</span>
-      <span>Embeddings</span>
-      <span>REST APIs</span>
-      <span>LangChain</span>
-      <span>Python</span>
-      <span>Power Automate (Cloud)</span>
-      <span>Power Automate (Desktop)</span>
-      <span>Power BI</span>
-      <span>Copilot Studio</span>
-    </div>
-  </div>
-</div>
-
-    <!-- LEFT -->
-<div class="timeline-container left">
-  <div class="experience-card">
-    <h3>Elections Canada</h3>
-    <p class="role">
-      Information Officer <span class="date">(Mar 2025 – May 2025)</span>
-    </p>
-    <ul class="experience-bullets">
-      <li>Provided front-line operational support for federal election processes, ensuring compliance with Elections Canada policies and procedures.</li>
-      <li>Verified voter eligibility, registrations, and documentation using secure government systems.</li>
-      <li>Handled sensitive elector data with strict adherence to privacy, security, and access-control protocols.</li>
-      <li>Resolved real-time operational and logistical issues to maintain efficient polling station workflows.</li>
-      <li>Supported high-volume public interactions while maintaining accuracy, professionalism, and regulatory compliance.</li>
-    </ul>
-    <div class="tech-tags">
-      <span>Operational Compliance</span>
-      <span>Data Privacy</span>
-      <span>Public Service</span>
-      <span>Process Adherence</span>
-    </div>
-  </div>
-</div>
-
-
-    <!-- RIGHT -->
-<div class="timeline-container right">
-  <div class="experience-card">
-    <h3>Ontario Power Generation</h3>
-    <p class="role">
-      Data Engineer Intern <span class="date">(May 2023 – May 2024)</span>
-    </p>
-    <ul class="experience-bullets">
-      <li>Designed and maintained enterprise Power BI dashboards supporting operational and performance reporting.</li>
-      <li>Built and optimized ETL pipelines to process and load large-scale datasets containing millions of records.</li>
-      <li>Worked extensively with Microsoft SQL Server to query, transform, and validate high-volume operational data.</li>
-      <li>Developed Power Apps solutions to support data collection, validation, and workflow automation.</li>
-      <li>Implemented data refresh schedules and performance optimizations to ensure reliable dashboard delivery.</li>
-      <li>Collaborated with engineering, operations, and analytics teams in a regulated nuclear environment.</li>
-    </ul>
-    <div class="tech-tags">
-      <span>Power BI</span>
-      <span>Power Apps</span>
-      <span>Microsoft SQL Server</span>
-      <span>ETL Pipelines</span>
-      <span>Large-Scale Data</span>
-      <span>Data Engineering</span>
-    </div>       
-  </div>
-</div>
-
-    <!-- LEFT -->
-<div class="timeline-container left">
-  <div class="experience-card">
-    <h3>Ontario Tech University – Brilliant Catalyst</h3>
-    <p class="role">
-      Software Developer <span class="date">(Nov 2022 – Apr 2023)</span>
-    </p>
-    <ul class="experience-bullets">
-      <li>Developed a mobile-first gym training application to track exercises, workout sessions, and calories burned.</li>
-      <li>Built core application features using Flutter, including workout logging, activity tracking, and user interaction flows.</li>
-      <li>Implemented backend logic and data handling using Python to support calculation and processing of fitness metrics.</li>
-      <li>Worked in a team of three as part of a structured apprenticeship program, following Agile development practices.</li>
-      <li>Collaborated on requirements gathering, MVP iteration, testing, and feature validation.</li>
-      <li>Delivered functional prototypes supporting usability testing and stakeholder feedback.</li>
-    </ul>
-    <div class="tech-tags">
-      <span>Flutter</span>
-      <span>FlutterFlow</span>
-      <span>Python</span>
-      <span>Mobile App Development</span>
-      <span>Agile</span>
-    </div>
-  </div>
-</div>
-  </div>
-</section>
-
-<section id="education" class="glass">
-  <h2>Education</h2>
-
-  <div class="edu-card">
-    <div class="edu-row">
-      <h3 class="edu-school">Toronto Metropolitan University</h3>
-      <span class="edu-date">Sept 2025 – Present</span>
-    </div>
-    <p class="edu-degree">Master of Cybersecurity</p>
-    <p class="edu-details">
-      Completed Coursework: Information Assurance, Privacy Law & Ethics, Security Technologies<br>
-      Focus: Secure Systems, Digital Trust, and Cybersecurity in Public Infrastructure
-    </p>
-  </div>
-
-  <div class="edu-card">
-    <div class="edu-row">
-      <h3 class="edu-school">Ontario Tech University</h3>
-      <span class="edu-date">Sept 2020 – May 2025</span>
-    </div>
-    <p class="edu-degree">Bachelor of Software Engineering (Honours)</p>
-    <p class="edu-details">
-      Relevant Coursework: Cloud Computing, Cybersecurity, Distributed Systems, Data Engineering<br>
-      Awards: President’s Honor List (2020), Dean’s List (2024)
-    </p>
-  </div>
-</section>
-
-<section id="projects" class="glass">
-  <h2>Projects</h2>
-  <div class="projects-grid">
-
-    <div class="project-card tilt">
-      <img src="images/food_app.png" alt="Food Planning App">
-      <h3>Food Planning App</h3>
-      <p>Flutter app with real-time meal tracking and budget management using Firebase.</p>
-      <a href="https://github.com/SuryaTeja2002-design/FoodApp_Assignment3" target="_blank" rel="noopener">View Code</a>
-    </div>
-
-    <div class="project-card tilt">
-      <img src="images/AI_Detector.png" alt="AI Code Analyzer Dashboard">
-      <h3>AI Code Analyzer Dashboard</h3>
-      <p>GPT-4 powered dashboard to detect risky code patterns in Python, Ruby, and JS files. Visualized with Chart.js.</p>
-      <a href="https://github.com/SuryaTeja2002-design/AI_Quality_Dashboard" target="_blank" rel="noopener">View Code</a>
-    </div>
-
-    <div class="project-card tilt">
-      <img src="images/municipalities.png" alt="By-Laws Municipal App">
-      <h3>By-Laws Municipal App</h3>
-      <p>React Native + Firebase civic app with on-device ML for image tagging and violation type prediction.</p>
-      <a href="https://github.com/SuryaTeja2002-design/ByLaws_App" target="_blank" rel="noopener">View Code</a>
-    </div>
-
-    <div class="project-card tilt">
-      <img src="images/weather_simulation.png" alt="Weather Simulation">
-      <h3>Weather Simulation</h3>
-      <p>Weather forecast platform using ARIMA and Monte Carlo simulations for 5-city prediction dashboards.</p>
-      <a href="https://github.com/Suryateja2002-design/Weather_Simulation" target="_blank" rel="noopener">View Code</a>
-    </div>
-
-    <div class="project-card tilt">
-      <img src="images/nebula_ai.png.png" alt="NebulaCore AI Trading">
-      <h3>NebulaCore – AI Trading Platform</h3>
-      <p>Full-stack microservice trading system with SpectraAI — a predictive ML engine for market simulation.</p>
-      <a href="https://github.com/SuryaTeja2002-design/nebula-core" target="_blank" rel="noopener">View Code</a>
-    </div>
-
-  </div>
-</section>
-
-
-
-
-<section id="contact" class="glass">
-  <h2>Contact Me</h2>
-  <p>Let's connect and build the future together.</p>
-  <div class="contact-links">
-    
-
-    <a href="https://linkedin.com/in/suryateja-gorthi-7b9253238/" target="_blank" class="contact-link" rel="noopener">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-      <i class="fa-brands fa-linkedin"></i>
-      LinkedIn
-    </a>
-
-    <a href="https://github.com/SuryaTeja2002-design" target="_blank" class="contact-link" rel="noopener">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-      <i class="fa-brands fa-github"></i>
-      GitHub
-    </a>
-
-    <a href="mailto:2002suryateja@gmail.com" class="contact-link">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-      <i class="fa-solid fa-envelope"></i>
-      Email
-    </a>
-
-  </div>
-</section>
-
-<div class="resume-box">
-  <h2 class="resume-heading">Want to see more information?</h2>
-  <a href="resume.html" class="resume-button" target="_blank">
-    Resume: View My Full Resume ↗
-  </a>
-</div>
-
 
 <footer>
-  <p>© 2025 SuryaTeja Gorthi</p>
+  <div class="footer-inner">
+    <span class="footer-logo">[ST/GORTHI]</span>
+    <span class="footer-copy">© 2025 SuryaTeja Gorthi · Built with precision.</span>
+    <span class="footer-tag">AI · Data · Security</span>
+  </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
-
-
